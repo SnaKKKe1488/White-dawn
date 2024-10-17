@@ -1,0 +1,19 @@
+spriteTypes = { 
+	##Icon For: True Russian Spirit
+	SpriteType = { 
+		name = "GFX_idea_RUS_true_russian_spirit-739504"
+		texturefile = "gfx/interface/ideas/true-russian-ideas/RUS_true_russian_spirit-739504.png"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_idea_RUS_communist-739504"
+		texturefile = "gfx/interface/ideas/true-russian-ideas/RUS_communist-739504.png"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_idea_RUS_slow_rebuild-739504"
+		texturefile = "gfx/interface/ideas/true-russian-ideas/RUS_slow_rebuild-739504.png"
+	}
+
+ 
+ }
