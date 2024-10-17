@@ -1,0 +1,52 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = srussia_tree
+	
+	country = {
+	    factor = 0
+		modifier = {
+			add = 100
+			original_tag = SOV
+		}
+	}
+	
+	default = no 
+
+	continuous_focus_position = { x = 20 y = 1000 }  
+	
+	initial_show_position = {
+		x = 15
+		y = 1
+	}
+	
+	focus = {
+	    id = SOV_true_russia
+		icon = GFX_SOV_true_russia
+		x = 15
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_bukharins_legacy
+		icon = GFX_SOV_bukharins_legacy
+		x = 1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+}	

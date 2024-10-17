@@ -1,0 +1,15 @@
+characters={
+	SOV_nikolay_bukharin = {
+		name = "Nikolay Bukharin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}	

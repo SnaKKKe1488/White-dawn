@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+
+		RUS_true_russian_spirit = {
+			picture = RUS_true_russian_spirit-739504
+			
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}		
+		
+		RUS_communist_ideals = {
+			picture = RUS_communist-739504
+			
+			modifier = {
+				stability_weekly = -0.02
+				communism_drift = 0.03
+				resistance_activity = 0.5
+			}
+		}		
+		
+		RUS_slow_rebuild = {
+			picture = RUS_slow_rebuild-739504
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				industry_repair_factor = -0.3
+				army_fuel_consumption_factor = 0.2
+			}
+		}
+	}
+}

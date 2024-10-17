@@ -1,0 +1,263 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = wrussia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = RUS
+		}
+	}
+
+	default = no 
+
+	continuous_focus_position = { x = 20 y = 1000 }  
+	
+	initial_show_position = {
+		x = 20
+		y = 0
+	}
+
+
+#######  #####    ###   ######  #####  #####  #######    #######  #####   ##### ##   ##  #####  #######  #####  
+  ###   ##       #####  ##   ##  ###  ##        ###      ##      ##   ## ##     ##   ## ##      ##      ##    
+  ###    #####  ##   ## ######   ###   #####    ###      ####    ##   ## ##     ##   ##  #####  #####    #####  
+  ###        ## ####### ##  ##   ###       ##   ###      ##      ##   ## ##     ##   ##      ## ##           ## 
+  ###    #####  ##   ## ##   ## #####  #####    ###      ##       #####   #####  #####   #####  #######  #####  
+                                                                                                               
+
+	focus = {
+		id = RUS_return_of_the_tsar
+		icon = GFX_tsar_is_back
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus = ICE_mineral_prospecting }
+		x = 5
+		y = 0
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+			set_power_balance = { id = RUS_power_balance }
+		}
+	}
+	
+	focus = {
+		id = RUS_alexander_iv
+		icon = GFX_alex
+		prerequisite = { focus = RUS_return_of_the_tsar }
+		mutually_exclusive = { focus = RUS_kolchak_i focus = RUS_vladimir_iii }
+		x = 4
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_kolchak_i
+		icon = GFX_kolchak
+		prerequisite = { focus = RUS_return_of_the_tsar }
+		mutually_exclusive = { focus = RUS_peter_iii focus = RUS_alexander_iv }
+		x = 2
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			hidden_effect = {
+				retire_character = RUS_josé_agripino_barnet
+			}
+			news_event = {
+				id = news.9999
+				days = 10
+				random_hours = 12
+				random_days = 10
+			}
+			add_country_leader_role = {
+				character = RUS_guillermo_cabral
+				promote_leader = yes
+				country_leader = {
+					ideology = centrism
+					expire = "1965.1.1.1"
+					traits = { war_industrialist }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_vladimir_iii
+		icon = GFX_vladimir
+		prerequisite = { focus = RUS_return_of_the_tsar }
+		mutually_exclusive = { focus = RUS_kolchak_i focus = RUS_alexander_iv }
+		x = 6
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_legacy_of_peter
+		icon = GFX_peter_the_great
+		prerequisite = { focus = RUS_vladimir_iii }
+		#mutually_exclusive = { focus = RUS_anton_i }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 6
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	focus = {
+		id = RUS_purge_of_our_own
+		icon = GFX_purge_of_our_own
+		prerequisite = { focus = RUS_kolchak_i }
+		#mutually_exclusive = { focus = RUS_anton_i }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 2
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+	focus = {
+		id = RUS_the_russian_empire
+		icon = GFX_the_russian_empire
+		prerequisite = { focus = RUS_purge_of_our_own focus = RUS_legacy_of_peter }
+		#mutually_exclusive = { focus = RUS_anton_i }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 5
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+			set_cosmetic_tag = RSE
+		}
+	}	
+	
+	focus = {
+		id = RUS_the_national_purge
+		icon = GFX_national_purge
+		prerequisite = { focus = RUS_the_russian_empire }
+		mutually_exclusive = { focus = RUS_political_pressure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 3
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_political_pressure
+		icon = GFX_political_pressure
+		prerequisite = { focus = RUS_the_russian_empire }
+		mutually_exclusive = { focus = RUS_the_national_purge }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 7
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	
+	
+	
+ #####   #####   ##    ##  ##    ## ##   ## ##   ## #####  #####  ####### 
+##      ##   ##  ###  ###  ###  ### ##   ## ###  ##  ###  ##        ###  
+##      ##   ##  ## ## ##  ## ## ## ##   ## ## # ##  ###   #####    ###   
+##      ##   ##  ##    ##  ##    ## ##   ## ##  ###  ###       ##   ###   
+ #####   #####   ##    ##  ##    ##  #####  ##   ## #####  #####    ###   
+       
+
+	focus = {
+		id = RUS_values_of_october
+		icon = GFX_values_of_october
+		#prerequisite = { focus = RUS_the_russian_empire }
+		mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 7
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	   
+
+
+}
