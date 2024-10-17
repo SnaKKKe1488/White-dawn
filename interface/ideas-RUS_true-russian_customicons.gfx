@@ -13,6 +13,11 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_idea_RUS_slow_rebuild-739504"
 		texturefile = "gfx/interface/ideas/true-russian-ideas/RUS_slow_rebuild-739504.png"
+	}	
+	
+	SpriteType = { 
+		name = "GFX_idea_RUS_fast_rebuild-739504"
+		texturefile = "gfx/interface/ideas/true-russian-ideas/RUS_fast_rebuild-739504.png"
 	}
 
  

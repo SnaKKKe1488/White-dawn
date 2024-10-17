@@ -29,6 +29,18 @@ ideas = {
 				industry_repair_factor = -0.3
 				army_fuel_consumption_factor = 0.2
 			}
+		}		
+		
+		RUS_fast_rebuild = {
+			picture = RUS_slow_rebuild-739504
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				industry_repair_factor = -0.15
+				army_fuel_consumption_factor = 0.1
+			}
 		}
 	}
 }
