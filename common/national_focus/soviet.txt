@@ -56,7 +56,7 @@ focus_tree = {
 	    id = SOV_end_of_compromise
 		icon = GFX_SOV_end_of_compromise
 		relative_position_id = SOV_february_values
-		x = -3
+		x = -6
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_february_values }
@@ -68,10 +68,25 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_internationalism
+		icon = GFX_SOV_internationalism
+		relative_position_id = SOV_february_values
+		x = 6
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_bukharins_legacy
 		icon = GFX_SOV_bukharins_legacy
 		relative_position_id = SOV_february_values
-		x = 3
+		x = 0
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_february_values }
@@ -86,7 +101,7 @@ focus_tree = {
 	    id = SOV_red_banner
 		icon = SOV_red_banner
 		relative_position_id = SOV_february_values
-		x = 0
+		x = -5
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -100,7 +115,7 @@ focus_tree = {
 	    id = SOV_true_socialism
 		icon = GFX_SOV_true_socialism
 		relative_position_id = SOV_bukharins_legacy
-		x = 2
+		x = -2
         y = 1
         cost = 10
 		mutually_exclusive = { focus = SOV_communism_in_one_country }
@@ -176,6 +191,20 @@ focus_tree = {
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_end_of_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_red_guard
+		icon = GFX_red_guard
+		relative_position_id = SOV_communism_in_one_country
+		x = -7
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_communism_in_one_country }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
