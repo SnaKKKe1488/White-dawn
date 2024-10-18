@@ -261,8 +261,6 @@ RAP = "countries/Rapa Nui.txt"
 YUC = "countries/Yucatan.txt"
 RIG = "countries/Rio Grande.txt"
 QUE = "countries/Quebec.txt"
-RUS = "countries/White Russia.txt"
-SUK = "countries/Soviet Ukraine.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"
