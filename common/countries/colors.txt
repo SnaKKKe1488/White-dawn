@@ -1,10 +1,5 @@
 #reload countrycolors
 
-RUS = {
-	color = rgb { 205 212 228 }
-	color_ui = rgb { 255 255 255 }
-}
-
 SUK = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
@@ -19,8 +14,8 @@ ENG = {
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 205 212 228 }
+	color_ui = rgb { 255 255 255 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
