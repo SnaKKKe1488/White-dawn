@@ -157,16 +157,6 @@ bookmarks = {
 			}	
 		}
 		
-		"RUS"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = neutrality
-			#available = { has_dlc = "No Step Back" }
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
