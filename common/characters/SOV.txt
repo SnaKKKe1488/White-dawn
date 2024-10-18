@@ -12,4 +12,18 @@ characters={
 			id = -1
 		}
 	}
+	
+	SOV_alexandr_kolchak = {
+		name = "Alexandr Kolchak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_Alexandr_Kolchak.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 }	
