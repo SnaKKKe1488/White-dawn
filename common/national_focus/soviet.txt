@@ -29,9 +29,38 @@ focus_tree = {
 	focus = {
 	    id = SOV_true_russia
 		icon = GFX_SOV_true_russia
-		x = 20
+		x = 30
         y = 1
         cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_february_values
+		icon = GFX_SOV_february_values
+		relative_position_id = SOV_true_russia
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_true_russia }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_end_of_compromise
+		icon = GFX_SOV_end_of_compromise
+		relative_position_id = SOV_february_values
+		x = -3
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_bukharins_legacy }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -41,11 +70,12 @@ focus_tree = {
 	focus = {
 	    id = SOV_bukharins_legacy
 		icon = GFX_SOV_bukharins_legacy
-		relative_position_id = SOV_true_russia
-		x = 0
+		relative_position_id = SOV_february_values
+		x = 3
         y = 1
         cost = 10
-		prerequisite = { focus = SOV_true_russia }
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_end_of_compromise }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -55,9 +85,9 @@ focus_tree = {
 	focus = {
 	    id = SOV_red_banner
 		icon = SOV_red_banner
-		relative_position_id = SOV_bukharins_legacy
+		relative_position_id = SOV_february_values
 		x = 0
-        y = 2
+        y = 3
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_communism_in_one_country focus = SOV_true_socialism }
@@ -70,9 +100,10 @@ focus_tree = {
 	    id = SOV_true_socialism
 		icon = GFX_SOV_true_socialism
 		relative_position_id = SOV_bukharins_legacy
-		x = 3
+		x = 2
         y = 1
         cost = 10
+		mutually_exclusive = { focus = SOV_communism_in_one_country }
 		prerequisite = { focus = SOV_bukharins_legacy }
         available_if_capitulated = no
         completion_reward = {
@@ -81,8 +112,8 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_work_with_SRs
-		icon = GFX_SOV_work_with_SRs
+	    id = SOV_political_compromise
+		icon = GFX_SOV_political_compromise
 		relative_position_id = SOV_true_socialism
 		x = 0
         y = 1
@@ -95,13 +126,42 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_work_with_SRs
+		icon = GFX_SOV_work_with_SRs
+		relative_position_id = SOV_political_compromise
+		x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_political_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_ideological_unity
+		icon = GFX_SOV_ideological_unity
+		relative_position_id = SOV_political_compromise
+		x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_political_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_red_unity
 		icon = GFX_SOV_red_unity
-		relative_position_id = SOV_work_with_SRs
-		x = 2
-        y = 0
+		relative_position_id = SOV_ideological_unity
+		x = -1
+        y = 1
         cost = 10
-		prerequisite = { focus = SOV_true_socialism }
+		prerequisite = { focus = SOV_ideological_unity }
+		prerequisite = { focus = SOV_work_with_SRs }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -111,11 +171,11 @@ focus_tree = {
 	focus = {
 	    id = SOV_communism_in_one_country
 		icon = GFX_SOV_communism_in_one_country
-		relative_position_id = SOV_bukharins_legacy
-		x = -3
+		relative_position_id = SOV_end_of_compromise
+		x = -2
         y = 1
         cost = 10
-		prerequisite = { focus = SOV_bukharins_legacy }
+		prerequisite = { focus = SOV_end_of_compromise }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
