@@ -436,6 +436,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_heavy_industry
+		icon = GFX_SOV_heavy_industry
+		relative_position_id = SOV_nationalization_efforts
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_nationalization_efforts }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_centralized_economy
 		icon = GFX_SOV_centralized_economy
 		relative_position_id = SOV_seize_the_means
