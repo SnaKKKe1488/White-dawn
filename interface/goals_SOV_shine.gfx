@@ -94,7 +94,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SOV_hold_elections_shine"
-		texturefile = "gfx/interface/goals/GFX_SOV_bukharins_legacy.png"			
+		texturefile = "gfx/interface/goals/GFX_SOV_hold_elections.png"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_SOV_hold_elections.png"			

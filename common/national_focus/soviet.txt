@@ -78,7 +78,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
 		available = {
-			communism > 0.5
+			communism > 0.3
 		}
 		bypass = {
 			ROOT = {
@@ -88,6 +88,9 @@ focus_tree = {
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_coup_kolchak }
         completion_reward = {
+		    country_event = {
+				id = sovelection.1 hours = 48
+			}
 		    custom_effect_tooltip = SOV_hold_elections
 		}
 	}
