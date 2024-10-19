@@ -183,6 +183,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_tax_in_kind
+		icon = GFX_SOV_tax_in_kind
+		relative_position_id = SOV_open_markets
+		x = 0
+        y = 2
+        cost = 10
+		prerequisite = { focus = SOV_open_markets }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_agricultural_reform
 		icon = GFX_SOV_agricultural_reform
 		relative_position_id = SOV_introduce_NEP
