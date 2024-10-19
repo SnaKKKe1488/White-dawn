@@ -60,7 +60,7 @@ focus_tree = {
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_february_values }
-		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_internationalism }
+		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -75,7 +75,7 @@ focus_tree = {
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_february_values }
-		mutually_exclusive = { focus = SOV_end_of_compromise focus = SOV_internationalism }
+		mutually_exclusive = { focus = SOV_end_of_compromise focus = SOV_trotsky }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -84,7 +84,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_socialism_in_one_country
-		icon = SOV_socialism_in_one_country
+		icon = GFX_SOV_socialism_in_one_country
 		relative_position_id = SOV_february_values
 		x = -5
         y = 3
@@ -369,7 +369,7 @@ focus_tree = {
 	    id = SOV_red_guard
 		icon = GFX_red_guard
 		relative_position_id = SOV_communism_in_one_country
-		x = -7
+		x = -3
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_communism_in_one_country }
@@ -381,9 +381,9 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_destroy_capitalists
-		icon = SOV_destroy_capitalists
+		icon = GFX_SOV_destroy_capitalists
 		relative_position_id = SOV_communism_in_one_country
-		x = -2
+		x = -3
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -394,8 +394,8 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_collectivization_efforts
-		icon = SOV_collectivization_efforts
+	    id = SOV_seize_the_means
+		icon = GFX_SOV_seize_the_means
 		relative_position_id = SOV_communism_in_one_country
 		x = 0
         y = 1
@@ -408,14 +408,28 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_revive_cheka
-		icon = SOV_revive_cheka
-		relative_position_id = SOV_collectivization_efforts
-		x = 0
+	    id = SOV_collectivization_efforts
+		icon = GFX_SOV_collectivization_efforts
+		relative_position_id = SOV_seize_the_means
+		x = 1
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_collectivization_efforts }
+		prerequisite = { focus = SOV_seize_the_means }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_nationalization_efforts
+		icon = GFX_SOV_nationalization_efforts
+		relative_position_id = SOV_seize_the_means
+		x = -1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_seize_the_means }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -423,13 +437,27 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_revolutionary_discipline
-		icon = SOV_revolutionary_discipline
-		relative_position_id = SOV_revive_cheka
+		icon = GFX_SOV_revolutionary_discipline
+		relative_position_id = SOV_hammer_and_sickle
+		x = 1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_hammer_and_sickle }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_purge_dissidents
+		icon = GFX_SOV_purge_dissidents
+		relative_position_id = SOV_revolutionary_discipline
 		x = 0
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_revive_cheka }
+		prerequisite = { focus = SOV_revolutionary_discipline }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -437,13 +465,12 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_prevent_counter_revolution
-		icon = SOV_prevent_counter_revolution
-		relative_position_id = SOV_revolutionary_discipline
-		x = -2
+		icon = GFX_SOV_prevent_counter_revolution
+		relative_position_id = SOV_party_discipline
+		x = 0
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_revolutionary_discipline }
 		prerequisite = { focus = SOV_party_discipline }
         completion_reward = {
 		    add_political_power = 100
@@ -452,7 +479,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_one_party
-		icon = SOV_one_party
+		icon = GFX_SOV_one_party
 		relative_position_id = SOV_prevent_counter_revolution
 		x = 0
         y = 2
@@ -465,24 +492,10 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_expand_operations
-		icon = SOV_expand_operations
-		relative_position_id = SOV_revive_cheka
-		x = 2
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-		prerequisite = { focus = SOV_revive_cheka }
-        completion_reward = {
-		    add_political_power = 100
-		}
-	}
-	
-	focus = {
 	    id = SOV_soviet_constitution
-		icon = SOV_soviet_constitution
+		icon = GFX_SOV_soviet_constitution
 		relative_position_id = SOV_communism_in_one_country
-		x = -4
+		x = -6
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -494,9 +507,9 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_hammer_and_sickle
-		icon = SOV_hammer_and_sickle
+		icon = GFX_SOV_hammer_and_sickle
 		relative_position_id = SOV_soviet_constitution
-		x = 0
+		x = 1
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -508,9 +521,9 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_party_discipline
-		icon = SOV_party_discipline
+		icon = GFX_SOV_party_discipline
 		relative_position_id = SOV_hammer_and_sickle
-		x = 0
+		x = -1
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -522,7 +535,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_protect_revolution
-		icon = SOV_protect_revolution
+		icon = GFX_SOV_protect_revolution
 		relative_position_id = SOV_soviet_constitution
 		x = -4
         y = 1
@@ -536,7 +549,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_commissariat
-		icon = SOV_commissariat
+		icon = GFX_SOV_commissariat
 		relative_position_id = SOV_soviet_constitution
 		x = -2
         y = 1
@@ -550,7 +563,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_vigilance
-		icon = SOV_vigilance
+		icon = GFX_SOV_vigilance
 		relative_position_id = SOV_commissariat
 		x = -1
         y = 1
@@ -565,7 +578,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_peoples_shield
-		icon = SOV_peoples_shield
+		icon = GFX_SOV_peoples_shield
 		relative_position_id = SOV_commissariat
 		x = -2
         y = 2
@@ -579,7 +592,7 @@ focus_tree = {
 	
 	focus = {
 	    id = SOV_workers_revolution
-		icon = SOV_workers_revolution
+		icon = GFX_SOV_workers_revolution
 		relative_position_id = SOV_commissariat
 		x = 0
         y = 2
@@ -592,8 +605,8 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_red_terror
-		icon = SOV_red_terror
+	    id = SOV_revive_cheka
+		icon = GFX_SOV_revive_cheka
 		relative_position_id = SOV_vigilance
 		x = 0
         y = 2
@@ -607,14 +620,70 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_internationalism
-		icon = GFX_SOV_internationalism
+	    id = SOV_expand_operations
+		icon = GFX_SOV_expand_operations
+		relative_position_id = SOV_revive_cheka
+		x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_revive_cheka }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_red_terror
+		icon = GFX_SOV_red_terror
+		relative_position_id = SOV_revive_cheka
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_revive_cheka }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_trotsky
+		icon = GFX_SOV_trotsky
 		relative_position_id = SOV_february_values
-		x = 6
+		x = 8
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_internationalism
+		icon = GFX_SOV_internationalism
+		relative_position_id = SOV_trotsky
+		x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_trotsky }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_rally_the_trotskyists
+		icon = GFX_SOV_rally_the_trotskyists
+		relative_position_id = SOV_internationalism
+		x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_internationalism }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
