@@ -56,13 +56,54 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_coup_kolchak
+		icon = GFX_SOV_coup_kolchak
+		relative_position_id = SOV_february_values
+		x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_hold_elections }
+        completion_reward = {
+		}
+	}
+	
+	focus = {
+	    id = SOV_hold_elections
+		icon = GFX_SOV_SOV_hold_elections
+		relative_position_id = SOV_february_values
+		x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_coup_kolchak }
+        completion_reward = {
+		}
+	}
+	
+	focus = {
+	    id = SOV_stablish_SSR
+		icon = GFX_SOV_stablish_SSR
+		relative_position_id = SOV_february_values
+		x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_coup_kolchak focus = SOV_hold_elections }
+        completion_reward = {
+		}
+	}
+	
+	focus = {
 	    id = SOV_end_of_compromise
 		icon = GFX_SOV_end_of_compromise
 		relative_position_id = SOV_february_values
 		x = -8
-        y = 1
+        y = 3
         cost = 10
-		prerequisite = { focus = SOV_february_values }
+		prerequisite = { focus = SOV_stablish_SSR }
 		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
         available_if_capitulated = no
         completion_reward = {
@@ -75,9 +116,9 @@ focus_tree = {
 		icon = GFX_SOV_bukharins_legacy
 		relative_position_id = SOV_february_values
 		x = 0
-        y = 1
+        y = 3
         cost = 10
-		prerequisite = { focus = SOV_february_values }
+		prerequisite = { focus = SOV_stablish_SSR }
 		mutually_exclusive = { focus = SOV_end_of_compromise focus = SOV_trotsky }
         available_if_capitulated = no
         completion_reward = {
@@ -88,7 +129,7 @@ focus_tree = {
 	focus = {
 	    id = SOV_socialism_in_one_country
 		icon = GFX_SOV_socialism_in_one_country
-		relative_position_id = SOV_february_values
+		relative_position_id = SOV_stablish_SSR
 		x = -5
         y = 3
         cost = 10
@@ -956,9 +997,9 @@ focus_tree = {
 		icon = GFX_SOV_trotsky
 		relative_position_id = SOV_february_values
 		x = 8
-        y = 1
+        y = 3
         cost = 10
-		prerequisite = { focus = SOV_february_values }
+		prerequisite = { focus = SOV_stablish_SSR }
 		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
         available_if_capitulated = no
         completion_reward = {

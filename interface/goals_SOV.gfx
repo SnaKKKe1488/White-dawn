@@ -1,12 +1,27 @@
 spriteTypes = {	
 
 	SpriteType = {
-	name = "GFX_SOV_true_russia"
-	texturefile = "gfx/interface/goals/GFX_SOV_true_russia.png"			
+		name = "GFX_SOV_true_russia"
+		texturefile = "gfx/interface/goals/GFX_SOV_true_russia.png"			
 	}	
 	
 	SpriteType = {
-	name = "GFX_february_values"
-	texturefile = "gfx/interface/goals/GFX_february_values.png"			
-	}	
+		name = "GFX_SOV_february_values"
+		texturefile = "gfx/interface/goals/GFX_SOV_february_values.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_bukharins_legacy"
+		texturefile = "gfx/interface/goals/GFX_SOV_bukharins_legacy.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_hold_elections"
+		texturefile = "gfx/interface/goals/GFX_SOV_hold_elections.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_coup_kolchak"
+		texturefile = "gfx/interface/goals/GFX_SOV_coup_kolchak.png"			
+	}
 }	
