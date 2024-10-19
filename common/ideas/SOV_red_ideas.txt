@@ -1,0 +1,13 @@
+ideas = {
+
+	country = {
+	
+		SOV_february_values = {
+			picture = SOV_february_values
+			
+			modifier = {
+				communism_drift = 0.02
+			}
+		}	
+	}
+}

@@ -31,10 +31,14 @@ focus_tree = {
 		icon = GFX_SOV_true_russia
 		x = 30
         y = 1
-        cost = 10
+        cost = 5
         available_if_capitulated = no
+		ai_will_do = {
+		    factor = 20
+		}	
         completion_reward = {
-		    add_political_power = 100
+			custom_effect_tooltip = SOV_socialist_path
+		    add_political_power = 150
 		}
 	}
 	
@@ -48,7 +52,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_true_russia }
         completion_reward = {
-		    add_political_power = 100
+			add_ideas = SOV_frebruary_values
 		}
 	}
 	
