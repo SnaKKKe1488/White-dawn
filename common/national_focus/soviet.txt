@@ -37,7 +37,7 @@ focus_tree = {
 		    factor = 20
 		}	
         completion_reward = {
-			custom_effect_tooltip = SOV_socialist_path
+			custom_effect_tooltip = SOV_true_russia_tooltip
 		    add_political_power = 150
 		}
 	}
