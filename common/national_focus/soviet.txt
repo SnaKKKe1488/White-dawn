@@ -492,6 +492,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_war_economy
+		icon = GFX_SOV_war_economy
+		relative_position_id = SOV_war_ready_economy
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_war_ready_economy }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_centralized_economy
 		icon = GFX_SOV_centralized_economy
 		relative_position_id = SOV_seize_the_means
@@ -554,11 +568,25 @@ focus_tree = {
 		icon = GFX_SOV_abolish_currency
 		relative_position_id = SOV_udarnik
 		x = -1
-        y = 1
+        y = 2
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_udarnik }
-		mutually_exclusive = { focus = SOV_credits_system }
+		mutually_exclusive = { focus = SOV_state_controlled_currency }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_seize_private
+		icon = GFX_SOV_seize_private
+		relative_position_id = SOV_abolish_currency
+		x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_abolish_currency }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -579,15 +607,73 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_credits_system
+	    id = SOV_abolish_private_property
+		icon = GFX_SOV_abolish_private_property
+		relative_position_id = SOV_work_for_nation
+		x = -1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_work_for_nation }
+		prerequisite = { focus = SOV_seize_private }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_state_controlled_currency
 		icon = GFX_SOV_credits_system
 		relative_position_id = SOV_udarnik
 		x = 1
-        y = 1
+        y = 2
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_udarnik }
 		mutually_exclusive = { focus = SOV_abolish_currency }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_price_controls
+		icon = GFX_SOV_price_controls
+		relative_position_id = SOV_state_controlled_currency
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_state_controlled_currency }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_proletariat_central_bank
+		icon = GFX_SOV_proletariat_central_bank
+		relative_position_id = SOV_state_controlled_currency
+		x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_state_controlled_currency }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_economic_miracle
+		icon = GFX_SOV_economic_miracle
+		relative_position_id = SOV_state_controlled_currency
+		x = 1
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_proletariat_central_bank }
+		prerequisite = { focus = SOV_price_controls }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -616,6 +702,20 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_revolutionary_discipline }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_purge_in_army
+		icon = GFX_SOV_purge_in_army
+		relative_position_id = SOV_purge_dissidents
+		x = 1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_purge_dissidents }
         completion_reward = {
 		    add_political_power = 100
 		}
