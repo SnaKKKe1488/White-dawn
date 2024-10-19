@@ -6,7 +6,9 @@ ideas = {
 			picture = SOV_february_values
 			
 			modifier = {
-				communism_drift = 0.02
+				communism_drift = 0.1
+				neutrality_drift = -0.2
+				fascism_drift = -0.2
 			}
 		}	
 	}

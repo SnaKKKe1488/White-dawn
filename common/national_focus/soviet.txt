@@ -38,7 +38,6 @@ focus_tree = {
 		}	
         completion_reward = {
 			custom_effect_tooltip = SOV_true_russia_tooltip
-		    add_political_power = 150
 		}
 	}
 	
@@ -52,7 +51,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_true_russia }
         completion_reward = {
-			add_ideas = SOV_frebruary_values
+			add_ideas = SOV_february_values
 		}
 	}
 	
