@@ -1,0 +1,1585 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = srussia_tree
+	
+	country = {
+	    factor = 0
+		modifier = {
+			add = 100
+			original_tag = SOV
+		}
+	}
+	
+	default = no 
+
+	continuous_focus_position = { x = 20 y = 1000 }  
+	
+	initial_show_position = {
+		x = 48
+		y = 1
+	}
+	
+	focus = {
+	    id = SOV_true_russia
+		icon = GFX_SOV_true_russia
+		x = 30
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_february_values
+		icon = GFX_SOV_february_values
+		relative_position_id = SOV_true_russia
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_true_russia }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_end_of_compromise
+		icon = GFX_SOV_end_of_compromise
+		relative_position_id = SOV_february_values
+		x = -3
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_bukharins_legacy }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_bukharins_legacy
+		icon = GFX_SOV_bukharins_legacy
+		relative_position_id = SOV_february_values
+		x = 3
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_end_of_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_red_banner
+		icon = SOV_red_banner
+		relative_position_id = SOV_february_values
+		x = 0
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_communism_in_one_country focus = SOV_true_socialism }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_true_socialism
+		icon = GFX_SOV_true_socialism
+		relative_position_id = SOV_bukharins_legacy
+		x = 2
+        y = 1
+        cost = 10
+		mutually_exclusive = { focus = SOV_communism_in_one_country }
+		prerequisite = { focus = SOV_bukharins_legacy }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_political_compromise
+		icon = GFX_SOV_political_compromise
+		relative_position_id = SOV_true_socialism
+		x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_true_socialism }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_work_with_SRs
+		icon = GFX_SOV_work_with_SRs
+		relative_position_id = SOV_political_compromise
+		x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_political_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_ideological_unity
+		icon = GFX_SOV_ideological_unity
+		relative_position_id = SOV_political_compromise
+		x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_political_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_red_unity
+		icon = GFX_SOV_red_unity
+		relative_position_id = SOV_ideological_unity
+		x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_ideological_unity }
+		prerequisite = { focus = SOV_work_with_SRs }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_communism_in_one_country
+		icon = GFX_SOV_communism_in_one_country
+		relative_position_id = SOV_end_of_compromise
+		x = -2
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_end_of_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_destroy_capitalists
+		icon = SOV_destroy_capitalists
+		relative_position_id = SOV_communism_in_one_country
+		x = -2
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_soviet_constitution focus = SOV_collectivization_efforts }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_collectivization_efforts
+		icon = SOV_collectivization_efforts
+		relative_position_id = SOV_communism_in_one_country
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_communism_in_one_country }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_revive_cheka
+		icon = SOV_revive_cheka
+		relative_position_id = SOV_collectivization_efforts
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_collectivization_efforts }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_revolutionary_discipline
+		icon = SOV_revolutionary_discipline
+		relative_position_id = SOV_revive_cheka
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_revive_cheka }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_prevent_counter_revolution
+		icon = SOV_prevent_counter_revolution
+		relative_position_id = SOV_revolutionary_discipline
+		x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_revolutionary_discipline }
+		prerequisite = { focus = SOV_party_discipline }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_one_party
+		icon = SOV_one_party
+		relative_position_id = SOV_prevent_counter_revolution
+		x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_prevent_counter_revolution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_expand_operations
+		icon = SOV_expand_operations
+		relative_position_id = SOV_revive_cheka
+		x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_revive_cheka }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_soviet_constitution
+		icon = SOV_soviet_constitution
+		relative_position_id = SOV_communism_in_one_country
+		x = -4
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_communism_in_one_country }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_hammer_and_sickle
+		icon = SOV_hammer_and_sickle
+		relative_position_id = SOV_soviet_constitution
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_soviet_constitution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_party_discipline
+		icon = SOV_party_discipline
+		relative_position_id = SOV_hammer_and_sickle
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_hammer_and_sickle }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_protect_revolution
+		icon = SOV_protect_revolution
+		relative_position_id = SOV_soviet_constitution
+		x = -4
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_soviet_constitution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_commissariat
+		icon = SOV_commissariat
+		relative_position_id = SOV_soviet_constitution
+		x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_soviet_constitution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_vigilance
+		icon = SOV_vigilance
+		relative_position_id = SOV_commissariat
+		x = -1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_commissariat }
+		prerequisite = { focus = SOV_protect_revolution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_peoples_shield
+		icon = SOV_peoples_shield
+		relative_position_id = SOV_commissariat
+		x = -2
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_commissariat }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_workers_revolution
+		icon = SOV_workers_revolution
+		relative_position_id = SOV_commissariat
+		x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_commissariat }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_red_terror
+		icon = SOV_red_terror
+		relative_position_id = SOV_vigilance
+		x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_peoples_shield }
+		prerequisite = { focus = SOV_workers_revolution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+ #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       
+  ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##       
+  ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##       
+  ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##       
+  ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##       
+  ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##       
+ #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
+                                                                                      
+	focus = {
+		id = SOV_reconstruction
+		icon = GFX_goal_generic_construction2
+		#prerequisite = { focus = RUS_the_russian_empire }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 50
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_slow_rebuild
+				add_idea = SOV_fast_rebuild
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_minister_of_reconstruction
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = SOV_reconstruction }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 50
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_civilian_infrastructure
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_minister_of_reconstruction}
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 55
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			195 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			246 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			247 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			210 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_military_infrastructure
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_minister_of_reconstruction }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 45
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			195 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+			219 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}			
+			
+			217 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_forts
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = SOV_military_infrastructure }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 47
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_fortss
+				days = 200
+				}
+		}
+	}	
+	
+	focus = {
+		id = SOV_military_factorys
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SOV_military_infrastructure }
+		mutually_exclusive = { focus = SOV_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 43
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			242 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+			263 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+			247 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = SOV_ukrainian_forts
+		icon = GFX_focus_POL_ukrainian_army
+		prerequisite = { focus = SOV_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 47
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_ukraine_forts
+			hidden_effect = {
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9488
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3519
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3540
+							instant_build = yes
+					}
+				}
+				260 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6591
+							instant_build = yes
+					}
+				}
+				260 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3567
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9424
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6432
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11439
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6517
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9449
+							instant_build = yes
+					}
+				}
+				240 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6481
+							instant_build = yes
+					}
+				}
+				220 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6543
+							instant_build = yes
+					}
+				}
+				220 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11526
+							instant_build = yes
+					}
+				}
+				220 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9542
+							instant_build = yes
+					}
+				}
+				220 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6254
+							instant_build = yes
+					}
+				}
+				224 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6330
+							instant_build = yes
+					}
+				}
+				224 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 288
+							instant_build = yes
+					}
+				}
+				224 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 343
+							instant_build = yes
+					}
+				}
+				224 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 315
+							instant_build = yes
+					}
+				}
+				224 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11229
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_don_caucasian_forts
+		icon = GFX_focus_SMB_mountain_guns
+		prerequisite = { focus = SOV_ukrainian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 46
+		y = 6
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_don_forts
+			hidden_effect = {
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11459
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 484
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 449
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3478
+							instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3489
+							instant_build = yes
+					}
+				}
+				217 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6503
+							instant_build = yes
+					}
+				}
+				217 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9459
+							instant_build = yes
+					}
+				}
+				217 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11447
+							instant_build = yes
+					}
+				}
+				217 = {
+					add_building_construction = {
+							type = bunker
+							level = 3
+							province = 498
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3487
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3461
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9440
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11579
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6620
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9753
+							instant_build = yes
+					}
+				}
+				236 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 757
+							instant_build = yes
+					}
+				}
+			}
+		}
+}		
+	
+	focus = {
+		id = SOV_finnish_forts
+		icon = GFX_focus_generic_fortify_finland
+		prerequisite = { focus = SOV_ukrainian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 48
+		y = 6
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_finnish_fortss
+			hidden_effect = {
+				195 = {
+					add_building_construction = {
+							type = bunker
+							level = 6
+							province = 3151
+							instant_build = yes
+					}
+				}
+				195 = {
+					add_building_construction = {
+							type = bunker
+							level = 5
+							province = 149
+							instant_build = yes
+					}
+				}
+				216 = {
+					add_building_construction = {
+							type = bunker
+							level = 4
+							province = 6070
+							instant_build = yes
+					}
+				}
+				216 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9078
+							instant_build = yes
+					}
+				}
+				216 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 40
+							instant_build = yes
+					}
+				}
+				216 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9231
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2998
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 80
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6098
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6175
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9074
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9198
+							instant_build = yes
+					}
+				}
+				215 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11181
+							instant_build = yes
+					}
+				}
+				213 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9123
+							instant_build = yes
+					}
+				}
+				213 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 15
+							instant_build = yes
+					}
+				}
+				213 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							province = 74
+							instant_build = yes
+					}
+				}
+			}
+		}	
+}
+	focus = {
+		id = SOV_fort_construction_company
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SOV_finnish_forts }
+		prerequisite = { focus = SOV_don_caucasian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 47
+		y = 7
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_forts2
+				remove_idea = SOV_fortss
+			}
+		}	
+}	
+	
+	focus = {
+		id = SOV_more_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_military_factorys }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 44
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_gov_mil_contract
+			activate_mission = contract_1
+			208 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			209 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			210 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			213 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			215 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			216 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			224 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			240 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			220 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}			
+			245 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			217 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			236 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+	}	
+	
+	focus = {
+		id = SOV_railroads
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = SOV_military_factorys }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 42
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			build_railway = {
+				level = 5
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SOV
+						add = 5
+					}
+				}
+				fallback = yes
+				path = { 3151 149 11068 9164 6095 3110 9060 194 9153 39 11131 3035 6056 6167 6101 121 3220 3116 6135 9257 11239 6370 9389 11375 6327 9325 3383 3282 9259 11356 11243 6338 372 3365 228 6323 6388 4400 6246 6285 291 1278 12117 10142 10329 12157 9292 1327 1292 10542 1387 4824 7846 7774 3472 10600 12652 4700 1709 10696 }
+				start_province = 3151
+				target_province = 10696
+			}
+		}
+	}	
+	
+	focus = {
+		id = SOV_supply_industry
+		icon = GFX_focus_generic_supply_line
+		prerequisite = { focus = SOV_more_infrastructure }
+		prerequisite = { focus = SOV_railroads }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 43
+		y = 7
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_supply_break
+		}
+	}		
+	
+	focus = {
+		id = SOV_supply_industry_airwater
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = SOV_supply_industry }
+		#prerequisite = { focus = SOV_railroads }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 43
+		y = 8
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_supply_break_aw
+		}
+	}	
+	
+	focus = {
+		id = SOV_gifts_to_smaller_countries
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SOV_minister_of_reconstruction }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 50
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			HUN = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			SWI = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			AUS = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			NED = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			BEL = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			CZE = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+			LUX = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = took_stand_for_us
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = SOV_urban_development_gifts
+		icon = GFX_focus_SWE_urbanization
+		prerequisite = { focus = SOV_gifts_to_smaller_countries }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 50
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+		}
+	}	
+	
+	focus = {
+		id = SOV_urban_development_infrastructure
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = SOV_civilian_infrastructure }
+		mutually_exclusive = { focus = SOV_rural_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 57
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			195 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			217 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			220 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			242 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_rural_development_infrastructure
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		prerequisite = { focus = SOV_civilian_infrastructure }
+		mutually_exclusive = { focus = SOV_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 53
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			825 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			214 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			880 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			579 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			516 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			878 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = SOV_urban_factorys
+		icon = GFX_goal_continuous_non_factory_construct
+		prerequisite = { focus = SOV_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 57
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_urban_upgradee
+		}
+	}	
+	
+	focus = {
+		id = SOV_agriculture_upgrade
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = SOV_rural_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 53
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_agriculture_upgradee
+		}
+	}	
+	
+	focus = {
+		id = SOV_civilian_upgrade
+		icon = GFX_focus_NORDIC_dem_selector_civilian
+		prerequisite = { focus = SOV_urban_factorys focus = SOV_agriculture_upgrade }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 55
+		y = 7
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = SOV_civilian_upgradee
+		}
+	}
+	
+	focus = {
+		id = SOV_extra_research_slot
+		icon = GFX_focus_generic_university_1
+		prerequisite = { focus = SOV_civilian_upgrade }
+		prerequisite = { focus = SOV_fort_construction_company focus = SOV_supply_industry }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 50
+		y = 9
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_erm
+			activate_mission = contract_2
+		}
+	}
+}	

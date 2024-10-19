@@ -1,0 +1,36 @@
+SOV_contracts = {
+
+	SOV_contract_a = {
+
+		icon = hol_attract_foreign_investors
+
+		allowed = {
+			tag = DDS
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = -0.15
+		}
+
+		visible = {
+			tag = DDS
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+	}
+}

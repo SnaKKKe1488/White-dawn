@@ -1,4 +1,10 @@
 ﻿l_english:
-RUS_true_russian_spirit:0 "True Russian Spirit"
-RUS_communist_ideals:0 "Communist Ideals"
-RUS_slow_rebuild:0 "Slow Reconstruction"
+SOV_true_russian_spirit:0 "True Russian Spirit"
+SOV_communist_ideals:0 "Communist Ideals"
+SOV_slow_rebuild:0 "Slow Reconstruction"
+SOV_failed_contract:0 "Failed Contract"
+SOV_fast_rebuild:0 "Fast Reconstruction"
+SOV_fortss:0 "W1 Grade Forts"
+SOV_forts2:0 "RS1 Grade Forts"
+SOV_supply_break:0 "Supply Breakthrough Technology"
+SOV_supply_break_aw:0 "Air Fuel & Supply Breakthrough"
