@@ -1,6 +1,4 @@
 spriteTypes = {
-    
-	
 	SpriteType = {
 		name = "GFX_SOV_true_russia_shine"
 		texturefile = "gfx/interface/goals/GFX_SOV_true_russia.png"			
@@ -32,7 +30,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
 		name = "GFX_SOV_february_values_shine"
 		texturefile = "gfx/interface/goals/GFX_SOV_february_values.png"			
