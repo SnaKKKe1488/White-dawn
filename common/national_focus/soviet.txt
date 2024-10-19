@@ -408,6 +408,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_rural_development
+		icon = GFX_SOV_rural_development
+		relative_position_id = SOV_collectivization_efforts
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_collectivization_efforts }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_nationalization_efforts
 		icon = GFX_SOV_nationalization_efforts
 		relative_position_id = SOV_seize_the_means
