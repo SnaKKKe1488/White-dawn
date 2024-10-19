@@ -98,10 +98,10 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_red_banner
-		icon = SOV_red_banner
+	    id = SOV_socialism_in_one_country
+		icon = SOV_socialism_in_one_country
 		relative_position_id = SOV_february_values
-		x = -4
+		x = -5
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -197,13 +197,56 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_agricultural_reform
-		icon = GFX_SOV_agricultural_reform
+	    id = SOV_smychka
+		icon = GFX_SOV_smychka
+		relative_position_id = SOV_tax_in_kind
+		x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_tax_in_kind }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_stable_currency
+		icon = GFX_SOV_stable_currency
 		relative_position_id = SOV_introduce_NEP
 		x = 0
         y = 2
         cost = 10
 		prerequisite = { focus = SOV_introduce_NEP }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_industrial_subsidies
+		icon = GFX_SOV_industrial_subsidies
+		relative_position_id = SOV_stable_currency
+		x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_stable_currency }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_agrarian_question
+		icon = GFX_SOV_agrarian_question
+		relative_position_id = SOV_allow_investment
+		x = 0
+        y = 3
+        cost = 10
+		prerequisite = { focus = SOV_stable_currency }
+		prerequisite = { focus = SOV_tax_in_kind }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
