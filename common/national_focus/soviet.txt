@@ -51,7 +51,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_true_russia }
         completion_reward = {
-			add_ideas = SOV_february_values
+			add_timed_idea = { idea = SOV_february_values  days = 140 }
 		}
 	}
 	
@@ -77,9 +77,18 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = no
+		available = {
+			communism > 0.5
+		}
+		bypass = {
+			ROOT = {
+			    has_government = communism
+			}	
+		}
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_coup_kolchak }
         completion_reward = {
+		    custom_effect_tooltip = SOV_hold_elections
 		}
 	}
 	
