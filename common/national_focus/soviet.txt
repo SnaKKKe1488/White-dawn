@@ -68,21 +68,6 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_internationalism
-		icon = GFX_SOV_internationalism
-		relative_position_id = SOV_february_values
-		x = 6
-        y = 1
-        cost = 10
-		prerequisite = { focus = SOV_february_values }
-		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
-        available_if_capitulated = no
-        completion_reward = {
-		    add_political_power = 100
-		}
-	}
-	
-	focus = {
 	    id = SOV_bukharins_legacy
 		icon = GFX_SOV_bukharins_legacy
 		relative_position_id = SOV_february_values
@@ -127,6 +112,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_power_of_peasantry
+		icon = GFX_SOV_power_of_peasantry
+		relative_position_id = SOV_true_socialism
+		x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_true_socialism }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_introduce_new_economy
 		icon = GFX_SOV_introduce_new_economy
 		relative_position_id = SOV_true_socialism
@@ -148,6 +147,20 @@ focus_tree = {
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_introduce_new_economy}
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_paced_industrialization
+		icon = GFX_SOV_paced_industrialization
+		relative_position_id = SOV_introduce_NEP
+		x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_introduce_NEP }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -289,6 +302,20 @@ focus_tree = {
         y = 1
         cost = 10
 		prerequisite = { focus = SOV_political_compromise }
+        available_if_capitulated = no
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_socialist_cultural_reform
+		icon = GFX_SOV_socialist_cultural_reform
+		relative_position_id = SOV_ideological_unity
+		x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_ideological_unity }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -574,6 +601,21 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_peoples_shield }
 		prerequisite = { focus = SOV_workers_revolution }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_internationalism
+		icon = GFX_SOV_internationalism
+		relative_position_id = SOV_february_values
+		x = 6
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_february_values }
+		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
+        available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
 		}
