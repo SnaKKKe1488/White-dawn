@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_SOV_true_russia"
+	texturefile = "gfx/interface/goals/GFX_SOV_true_russia.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_february_values"
+	texturefile = "gfx/interface/goals/GFX_SOV_february_values.png"			
+	}
+}	
