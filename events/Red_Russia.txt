@@ -80,3 +80,29 @@ country_event = {
 		set_country_flag = SOV_coup_instated
 	}
 }
+
+country_event = {
+	id = soviet_election.4
+	title = soviet_election.4.t
+	desc = soviet_election.4.desc
+	picture = GFX_soviet_election.4
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = soviet_election.4.a
+		
+	}
+	
+	option = {
+		name = soviet_election.4.b
+		
+	}
+	
+	option = {
+		name = soviet_election.4.c
+		
+	}
+}

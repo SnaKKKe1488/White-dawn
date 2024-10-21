@@ -29,4 +29,9 @@ spriteTypes = {
 		name = "GFX_SOV_stablish_SSR"
 		texturefile = "gfx/interface/goals/GFX_SOV_stablish_SSR.png"			
 	}
+	
+	SpriteType = {
+		name = "GFX_SOV_soviet_congress"
+		texturefile = "gfx/interface/goals/GFX_SOV_soviet_congress.dds"			
+	}
 }	

@@ -124,39 +124,58 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_end_of_compromise
-		icon = GFX_SOV_end_of_compromise
-		relative_position_id = SOV_february_values
-		x = -8
-        y = 3
+	    id = SOV_soviet_congress
+		icon = GFX_SOV_soviet_congress
+		relative_position_id = SOV_stablish_SSR
+		x = 0
+        y = 1
         cost = 10
 		prerequisite = { focus = SOV_stablish_SSR }
-		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
         available_if_capitulated = no
         completion_reward = {
+			country_event = { id = soviet_election.4 days = 3 }
 		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_end_of_compromise
+		icon = GFX_SOV_end_of_compromise
+		relative_position_id = SOV_soviet_congress
+		x = -8
+        y = 1
+        cost = 10
+		prerequisite = { focus = SOV_soviet_congress }
+		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
+        available_if_capitulated = no
+		available = {
+			always = no
+		}	
+        completion_reward = {
 		}
 	}
 	
 	focus = {
 	    id = SOV_bukharins_legacy
 		icon = GFX_SOV_bukharins_legacy
-		relative_position_id = SOV_february_values
+		relative_position_id = SOV_soviet_congress
 		x = 0
-        y = 3
+        y = 1
         cost = 10
-		prerequisite = { focus = SOV_stablish_SSR }
+		prerequisite = { focus = SOV_soviet_congress }
 		mutually_exclusive = { focus = SOV_end_of_compromise focus = SOV_trotsky }
         available_if_capitulated = no
+		available = {
+			always = no
+		}
         completion_reward = {
-		    add_political_power = 100
 		}
 	}
 	
 	focus = {
 	    id = SOV_socialism_in_one_country
 		icon = GFX_SOV_socialism_in_one_country
-		relative_position_id = SOV_stablish_SSR
+		relative_position_id = SOV_soviet_congress
 		x = -5
         y = 3
         cost = 10
@@ -1022,15 +1041,17 @@ focus_tree = {
 	focus = {
 	    id = SOV_trotsky
 		icon = GFX_SOV_trotsky
-		relative_position_id = SOV_february_values
+		relative_position_id = SOV_soviet_congress
 		x = 8
-        y = 3
+        y = 1
         cost = 10
-		prerequisite = { focus = SOV_stablish_SSR }
+		prerequisite = { focus = SOV_soviet_congress }
 		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_end_of_compromise }
         available_if_capitulated = no
+		available = {
+			always = no
+		}
         completion_reward = {
-		    add_political_power = 100
 		}
 	}
 	
