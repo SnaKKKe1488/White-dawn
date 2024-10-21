@@ -1,33 +1,51 @@
+add_namespace = soviet_election
+
 country_event = {
-	id = soviet_elections.1
-	title = soviet_elections.1.t
-	desc = soviet_elections.1.desc
-	picture = GFX_soviet_elections.1
+	id = soviet_election.1
+	title = soviet_election.1.t
+	desc = soviet_election.1.desc
+	picture = GFX_soviet_election.1
 	
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	immediate = {
-		hidden_effect = {
-		}
-	}
-
-	trigger = {
-		NOT = { has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites }
-	}
-
 	option = {
-		name = soviet_elections.1.a
+		name = soviet_election.1.a
 		
-		custom_effect_tooltip = 
-		unlock_decision_category_tooltip =
-
-		effect_tooltip = {
-			add_country_leader_trait = stalin_political_paranoia
+		if = {
+			limit = {
+				ROOT = {
+					communism > 0.50
+				}
+			}
+			
+			hidden_effect = {
+				FROM = {
+					country_event = { id = soviet_election.2 days = 2 }
+				}	
+			}
 		}
+		
+		OR
 
-		#NKVD chiefs will make Political Paranoia worse
-		custom_effect_tooltip = SOV_paranoia_system_nkvd_trait_tt
+		if = {
+			limit = {
+				ROOT = {
+					communism < 0.50
+				}
+			}
+			
+			hidden_effect = {
+				FROM = {
+					country_event = { id = soviet_election.3 days = 2 }
+				}	
+			}
+		}
+	}
+	
+	option = {
+		name = soviet_election.1.b
+		
 	}
 }
