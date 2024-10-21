@@ -10,6 +10,16 @@ ideas = {
 				neutrality_drift = -0.2
 				fascism_drift = -0.2
 			}
-		}	
+		}
+
+		SOV_post_coup = {
+			picture = GFX_SOV_post_coup
+			
+			modifier = {
+				political_power_factor = -0.50
+				stability_weekly = -0.025
+				war_support_weekly = -0.025
+			}
+		}
 	}
 }
