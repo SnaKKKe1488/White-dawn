@@ -67,6 +67,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_hold_elections }
         completion_reward = {
 			set_country_flag = SOV_coup_instated
+			country_event = { id = soviet_election.3 hours 48 }
 		}
 	}
 	
