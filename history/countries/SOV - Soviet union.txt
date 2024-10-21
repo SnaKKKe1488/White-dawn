@@ -10,6 +10,9 @@ set_technology = {
 recruit_character = SOV_alexandr_kolchak
 
 add_ideas = {
+	SOV_dated_military
+	SOV_kolchak_iron_fist
+	SOV_unfinished_land_reform
 }
 
 set_convoys = 20
