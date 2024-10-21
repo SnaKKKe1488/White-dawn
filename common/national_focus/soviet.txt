@@ -66,6 +66,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_hold_elections }
         completion_reward = {
+			add_stability = -0.15
 			set_country_flag = SOV_coup_instated
 			country_event = { id = soviet_election.3 hours 48 }
 		}
@@ -104,8 +105,7 @@ focus_tree = {
         cost = 2
         available_if_capitulated = no
 		available = {
-			has_war = no
-			has_country_flag = SOV_coup_instated
+			always = no
 		}
 		prerequisite = { focus = SOV_coup_kolchak focus = SOV_hold_elections }
         completion_reward = {

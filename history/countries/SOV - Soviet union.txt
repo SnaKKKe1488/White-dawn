@@ -1,5 +1,7 @@
 ﻿capital = 195
 
+oob = "SOV_1936"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -37,11 +39,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Viktor Chernov"
+	name = "Nikolay Bukharin"
 	desc = ""
-	picture = "gfx/leaders/SOV/portrait_SOV_viktor_chernov.png"
+	picture = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
 	expire = "1953.3.1"
-	ideology = leninism
+	ideology = marxism
 	traits = {
 		
 	}

@@ -2,8 +2,8 @@ ideas = {
 
 	country = {
 	
-		SOV_february_values = {
-			picture = GFX_SOV_february_values
+		SOV_february_values_idea = {
+			picture = GFX_SOV_february_values_idea
 			
 			modifier = {
 				communism_drift = 0.1
