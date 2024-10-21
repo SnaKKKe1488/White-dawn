@@ -51,7 +51,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_true_russia }
         completion_reward = {
-			add_timed_idea = { idea = SOV_february_values  days = 140 }
+			add_timed_idea = { idea = SOV_february_values_idea  days = 140 }
 		}
 	}
 	
