@@ -88,9 +88,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_coup_kolchak }
         completion_reward = {
-		    country_event = {
-				id = sovelection.1 hours = 48
-			}
+		    country_event = { id = soviet_elections.1 hours = 48 }
 		    custom_effect_tooltip = SOV_hold_elections
 		}
 	}
