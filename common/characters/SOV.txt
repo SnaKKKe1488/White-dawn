@@ -1,17 +1,4 @@
 characters={
-	SOV_nikolay_bukharin = {
-		name = "Nikolay Bukharin"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
-			}
-		}
-		country_leader = {
-			ideology = socialism
-			expire = "1965.1.1.1"
-			id = -1
-		}
-	}
 	
 	SOV_alexandr_kolchak = {
 		name = "Alexandr Kolchak"
@@ -22,6 +9,34 @@ characters={
 		}
 		country_leader = {
 			ideology = fascism_ideology
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	SOV_viktor_chernov = {
+		name = "Viktor Chernov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_viktor_chernov.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	SOV_nikolay_bukharin = {
+		name = "Nikolay Bukharin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_nikolay_bukharin.dds"
+			}
+		}
+		country_leader = {
+			ideology = socialism
 			expire = "1965.1.1.1"
 			id = -1
 		}

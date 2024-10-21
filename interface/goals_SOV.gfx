@@ -24,4 +24,9 @@ spriteTypes = {
 		name = "GFX_SOV_coup_kolchak"
 		texturefile = "gfx/interface/goals/GFX_SOV_coup_kolchak.png"			
 	}
+	
+	SpriteType = {
+		name = "GFX_SOV_stablish_SSR"
+		texturefile = "gfx/interface/goals/GFX_SOV_stablish_SSR.png"			
+	}
 }	

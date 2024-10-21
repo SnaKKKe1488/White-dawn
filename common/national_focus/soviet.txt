@@ -66,6 +66,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_hold_elections }
         completion_reward = {
+			set_country_flag = SOV_coup_instated
 		}
 	}
 	
@@ -99,27 +100,25 @@ focus_tree = {
 		relative_position_id = SOV_february_values
 		x = 0
         y = 2
-        cost = 10
+        cost = 2
         available_if_capitulated = no
 		available = {
 			has_war = no
-			has_country_flag = SOV_won_election
+			has_country_flag = SOV_coup_instated
 		}
 		prerequisite = { focus = SOV_coup_kolchak focus = SOV_hold_elections }
         completion_reward = {
-			effect_tooltip = {
-				set_party_name = { 
-					ideology = communism
-					long_name = SOV_SSR_party_long
-					name = SOV_SSR_party
-				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = yes
-					election_frequency = 60
-				}
-				set_cosmetic_tag = SOV_SSR
+			set_party_name = { 
+				ideology = communism
+				long_name = SOV_SSR_party_long
+				name = SOV_SSR_party
 			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+				election_frequency = 60
+			}
+			set_cosmetic_tag = SOV_SSR
 		}
 	}
 	

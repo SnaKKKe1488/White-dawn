@@ -57,7 +57,6 @@ country_event = {
 		name = soviet_election.2.a
 		
 		complete_national_focus = SOV_stablish_SSR
-		set_country_flag = SOV_won_election
 	}
 }
 
@@ -74,11 +73,6 @@ country_event = {
 	option = {
 		name = soviet_election.3.a
 		
-	}
-	
-	option = {
-		name = soviet_election.3.b
-		
-		
+		set_country_flag = SOV_coup_instated
 	}
 }

@@ -35,3 +35,14 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "Viktor Chernov"
+	desc = ""
+	picture = "gfx/leaders/SOV/portrait_SOV_viktor_chernov.png"
+	expire = "1953.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
