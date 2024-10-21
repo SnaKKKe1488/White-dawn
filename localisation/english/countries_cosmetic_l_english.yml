@@ -1967,3 +1967,7 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  LGF_UNIFIED_communsim: "Socialist League"
  LGF_UNIFIED_communsim_DEF: "the Socialist League"
  LGF_UNIFIED_communism_ADJ: "Socialist League"
+ 
+ SSR_SOV: "Russian Soviet Socialist Republic"
+ SSR_SOV_DEF: "The Russian Soviet Socialist Republic"
+ SSR_SOV: "Russian"
