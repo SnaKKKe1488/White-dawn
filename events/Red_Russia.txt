@@ -4,7 +4,7 @@ country_event = {
 	id = soviet_election.1
 	title = soviet_election.1.t
 	desc = soviet_election.1.desc
-	picture = GFX_news_event_election_vote
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
@@ -47,7 +47,7 @@ country_event = {
 	id = soviet_election.2 #election succesful!
 	title = soviet_election.2.t
 	desc = soviet_election.2.desc
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_SOV_election
 	
 	is_triggered_only = yes
 
@@ -64,7 +64,7 @@ country_event = {
 	id = soviet_election.3
 	title = soviet_election.3.t
 	desc = soviet_election.3.desc
-	picture = GFX_report_event_SOV_election
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
@@ -84,7 +84,7 @@ country_event = {
 	id = soviet_election.4 #Coup
 	title = soviet_election.4.t
 	desc = soviet_election.4.desc
-	picture = GFX_soviet_election.4
+	picture = GFX_report_event_SOV_coup
 	
 	is_triggered_only = yes
 
