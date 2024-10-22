@@ -13,6 +13,8 @@ add_ideas = {
 	SOV_dated_military
 	SOV_kolchak_iron_fist
 	SOV_unfinished_land_reform
+	SOV_underdeveloped_industry
+	SOV_underdeveloped_infrastructure
 }
 
 set_convoys = 20

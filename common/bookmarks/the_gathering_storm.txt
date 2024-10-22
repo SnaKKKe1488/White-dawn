@@ -160,7 +160,9 @@ bookmarks = {
 			ideology = communism
 			available = { has_dlc = "No Step Back" }
 			ideas = {
-				
+				SOV_kolchak_iron_fist
+				SOV_dated_military
+				SOV_underdeveloped_industry
 			}
 			focuses = {
 				

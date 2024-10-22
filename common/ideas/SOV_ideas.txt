@@ -14,7 +14,7 @@ ideas = {
 		}
 		
 		SOV_kolchak_iron_fist = {
-			picture = GFX_SOV_kolchak_iron_fist
+			picture = GFX_generic_iron_fist
 			
 			modifier = {
 				political_power_factor = 0.25
@@ -30,7 +30,27 @@ ideas = {
 			modifier = {
 				global_building_slots_factor = -0.50
 			}
-		}	
+		}
+		
+		SOV_underdeveloped_industry	= {
+			picture = GFX_SOV_underdeveloped_industry
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		SOV_underdeveloped_infrastructure = {
+			picture = GFX_SOV_underdeveloped_infrastructure
+			
+			modifier = {
+				supply_node_range = -0.1
+				production_speed_infrastructure_factor = -0.2
+				production_speed_rail_way_factor = -0.2
+			}
+		}
 		
 		SOV_february_values_idea = {
 			picture = GFX_SOV_february_values_idea
