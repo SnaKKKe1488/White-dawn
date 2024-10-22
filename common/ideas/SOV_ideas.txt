@@ -3,7 +3,7 @@ ideas = {
 	country = {
 	
 		SOV_dated_military = {
-			picture = GFX_SOV_dated_military
+			picture = SOV_dated_military
 			
 			modifier = {
 				army_attack_factor = -0.25
@@ -14,7 +14,7 @@ ideas = {
 		}
 		
 		SOV_kolchak_iron_fist = {
-			picture = GFX_generic_iron_fist
+			picture = generic_iron_fist
 			
 			modifier = {
 				political_power_factor = 0.25
@@ -25,7 +25,7 @@ ideas = {
 		}
 		
 		SOV_unfinished_land_reform = {
-			picture = GFX_SOV_unfinished_land_reform
+			picture = SOV_unfinished_land_reform
 			
 			modifier = {
 				global_building_slots_factor = -0.50
@@ -33,17 +33,17 @@ ideas = {
 		}
 		
 		SOV_underdeveloped_industry	= {
-			picture = GFX_SOV_underdeveloped_industry
+			picture = SOV_underdeveloped_industry
 			
 			modifier = {
 				production_speed_buildings_factor = -0.2
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 				industrial_capacity_factory = -0.2
 			}
 		}
 		
 		SOV_underdeveloped_infrastructure = {
-			picture = GFX_SOV_underdeveloped_infrastructure
+			picture = SOV_underdeveloped_infrastructure
 			
 			modifier = {
 				supply_node_range = -0.1
@@ -53,7 +53,7 @@ ideas = {
 		}
 		
 		SOV_february_values_idea = {
-			picture = GFX_SOV_february_values_idea
+			picture = SOV_february_values_idea
 			
 			modifier = {
 				communism_drift = 0.1
@@ -63,7 +63,7 @@ ideas = {
 		}
 
 		SOV_post_coup = {
-			picture = GFX_SOV_post_coup
+			picture = SOV_post_coup
 			
 			modifier = {
 				political_power_factor = -0.50
