@@ -9,6 +9,7 @@ set_technology = {
 set_research_slots = 3
 
 recruit_character = SOV_alexandr_kolchak
+recruit_character = SOV_yezhov
 
 add_ideas = {
 	SOV_dated_military

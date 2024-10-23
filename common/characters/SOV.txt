@@ -41,4 +41,18 @@ characters={
 			id = -1
 		}
 	}
+	
+	SOV_yezhov = {
+		name = "Nikolái Yezhov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/portrait_SOV_yezhov.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 }	
