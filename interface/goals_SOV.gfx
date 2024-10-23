@@ -11,11 +11,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_SOV_bukharins_legacy"
-		texturefile = "gfx/interface/goals/GFX_SOV_bukharins_legacy.png"			
-	}
-	
-	SpriteType = {
 		name = "GFX_SOV_hold_elections"
 		texturefile = "gfx/interface/goals/GFX_SOV_hold_elections.png"			
 	}
@@ -33,5 +28,20 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_soviet_congress"
 		texturefile = "gfx/interface/goals/GFX_SOV_soviet_congress.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_bukharins_legacy"
+		texturefile = "gfx/interface/goals/GFX_SOV_bukharins_legacy.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_end_of_compromise"
+		texturefile = "gfx/interface/goals/GFX_SOV_end_of_compromise.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_trotsky"
+		texturefile = "gfx/interface/goals/GFX_SOV_trotsky.png"			
 	}
 }	
