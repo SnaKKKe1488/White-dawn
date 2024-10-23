@@ -1,12 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-
-focus_tree = {
+﻿focus_tree = {
 	id = srussia_tree
 	
 	country = {
@@ -190,7 +182,7 @@ focus_tree = {
         y = 3
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_communism_in_one_country focus = SOV_true_socialism }
+		prerequisite = { focus = SOV_embrace_communism focus = SOV_true_socialism }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -203,7 +195,6 @@ focus_tree = {
 		x = 0
         y = 1
         cost = 10
-		mutually_exclusive = { focus = SOV_communism_in_one_country }
 		prerequisite = { focus = SOV_bukharins_legacy }
         available_if_capitulated = no
         completion_reward = {
@@ -452,8 +443,8 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_communism_in_one_country
-		icon = GFX_SOV_communism_in_one_country
+	    id = SOV_embrace_communism
+		icon = GFX_SOV_embrace_communism
 		relative_position_id = SOV_end_of_compromise
 		x = 0
         y = 1
@@ -468,11 +459,11 @@ focus_tree = {
 	focus = {
 	    id = SOV_red_guard
 		icon = GFX_SOV_red_guard
-		relative_position_id = SOV_communism_in_one_country
+		relative_position_id = SOV_embrace_communism
 		x = -3
         y = 1
         cost = 10
-		prerequisite = { focus = SOV_communism_in_one_country }
+		prerequisite = { focus = SOV_embrace_communism }
         available_if_capitulated = no
         completion_reward = {
 		    add_political_power = 100
@@ -496,12 +487,12 @@ focus_tree = {
 	focus = {
 	    id = SOV_seize_the_means
 		icon = GFX_SOV_seize_the_means
-		relative_position_id = SOV_communism_in_one_country
+		relative_position_id = SOV_embrace_communism
 		x = 0
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_communism_in_one_country }
+		prerequisite = { focus = SOV_embrace_communism }
         completion_reward = {
 		    add_political_power = 100
 		}
@@ -867,12 +858,12 @@ focus_tree = {
 	focus = {
 	    id = SOV_dissolve_duma
 		icon = GFX_SOV_dissolve_duma
-		relative_position_id = SOV_communism_in_one_country
+		relative_position_id = SOV_embrace_communism
 		x = -6
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_communism_in_one_country }
+		prerequisite = { focus = SOV_embrace_communism }
         completion_reward = {
 		    add_political_power = 100
 		}
