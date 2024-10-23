@@ -100,3 +100,38 @@ country_event = {
 		complete_national_focus = SOV_stablish_SSR
 	}	
 }
+
+country_event = {
+	id = soviet_election.5
+	title = soviet_election.5.t
+	desc = soviet_election.5.desc
+	picture = GFX_report_event_SOV_coup
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = soviet_election.4.a
+		
+		hidden_effect = {
+			complete_national_focus = SOV_trotsky
+		}	
+	}
+	
+	option = {
+		name = soviet_election.4.b
+		
+		hidden_effect = {
+			complete_national_focus = SOV_bukharins_legacy
+		}	
+	}
+	
+	option = {
+		name = soviet_election.4.c
+		
+		hidden_effect = {
+			complete_national_focus = SOV_end_of_compromise
+		}	
+	}
+}
