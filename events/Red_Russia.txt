@@ -93,9 +93,7 @@ country_event = {
 	option = {
 		name = soviet_election.4.a
 		
-		add_ideas = {
-			SOV_post_coup
-		}	
+		add_timed_idea = { idea = SOV_post_coup days = 90 }	
 		add_political_power = -25
 		complete_national_focus = SOV_stablish_SSR
 	}	

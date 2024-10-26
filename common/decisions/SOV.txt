@@ -1,0 +1,25 @@
+political_actions = {
+	
+	SOV_socialist_propaganda = {
+		icon = generic_political_actions
+	
+		allowed = {
+			original_tag = SOV
+			
+		}
+	
+		available = {
+			has_completed_focus = SOV_true_russia
+		} 
+		
+		visible = {
+			has_completed_focus = SOV_true_russia
+		}
+	
+		cost = 25
+	
+		complete_effect = {
+			add_popularity = { ideology = communism popularity = 0.05 }
+		}
+	}	
+}

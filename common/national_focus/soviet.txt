@@ -452,7 +452,11 @@
 		prerequisite = { focus = SOV_end_of_compromise }
         available_if_capitulated = no
         completion_reward = {
-		    add_political_power = 100
+		    add_popularity = {
+				ideology = communism
+				popularity = 0.15
+				add_political_power = -75
+			}
 		}
 	}
 	
