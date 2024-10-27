@@ -98,6 +98,16 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		SOV_centralized_economy_idea = {
+			picture = SOV_centralized_economy_idea
+			
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

@@ -704,8 +704,8 @@
 	}
 	
 	focus = {
-	    id = SOV_udarnik
-		icon = GFX_SOV_udarnik
+	    id = SOV_two_year_plan
+		icon = GFX_SOV_two_year_plan
 		relative_position_id = SOV_workforce_mobilization
 		x = 0
         y = 1
@@ -720,12 +720,12 @@
 	focus = {
 	    id = SOV_abolish_currency
 		icon = GFX_SOV_abolish_currency
-		relative_position_id = SOV_udarnik
+		relative_position_id = SOV_two_year_plan
 		x = -1
         y = 2
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_udarnik }
+		prerequisite = { focus = SOV_two_year_plan }
 		mutually_exclusive = { focus = SOV_state_controlled_currency }
         completion_reward = {
 		    add_political_power = 100
@@ -778,12 +778,12 @@
 	focus = {
 	    id = SOV_state_controlled_currency
 		icon = GFX_SOV_credits_system
-		relative_position_id = SOV_udarnik
+		relative_position_id = SOV_two_year_plan
 		x = 1
         y = 2
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_udarnik }
+		prerequisite = { focus = SOV_two_year_plan }
 		mutually_exclusive = { focus = SOV_abolish_currency }
         completion_reward = {
 		    add_political_power = 100
