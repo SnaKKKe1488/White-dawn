@@ -106,8 +106,21 @@ ideas = {
 			picture = SOV_centralized_economy_idea
 			
 			modifier = {
-				local_resources_factor = 0.1
-				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.1
+				industry_free_repair_factor = 0.1
+			}
+		}
+		
+		SOV_centralized_economy_idea_2 = {
+			picture = SOV_centralized_economy_idea
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				industry_repair_factor = 0.2
+				industry_free_repair_factor = 0.2
 			}
 		}
 	}
