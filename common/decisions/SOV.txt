@@ -1,7 +1,7 @@
 political_actions = {
 	
 	SOV_socialist_propaganda = {
-		icon = generic_political_actions
+		icon = decision_category_generic_communism
 	
 		allowed = {
 			original_tag = SOV

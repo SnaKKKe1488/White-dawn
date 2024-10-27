@@ -49,6 +49,7 @@ ideas = {
 				supply_node_range = -0.1
 				production_speed_infrastructure_factor = -0.2
 				production_speed_rail_way_factor = -0.2
+				local_resources_factor = -0.1
 			}
 		}
 		
@@ -69,6 +70,34 @@ ideas = {
 				political_power_factor = -0.50
 				stability_weekly = -0.025
 				war_support_weekly = -0.025
+			}
+		}
+		
+		SOV_red_guard_idea = {
+			picture = SOV_red_guard_idea
+			
+			modifier = {
+				conscription_factor = 0.2
+				modifier_army_sub_unit_militia_speed_factor = 0.05
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+			}
+		}
+		
+		SOV_red_guard_idea_2 = {
+			picture = SOV_red_guard_idea
+			
+			modifier = {
+				conscription_factor = 0.2
+				modifier_army_sub_unit_militia_speed_factor = 0.1
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+			}
+		}
+		
+		SOV_rural_mechanization_idea = {
+			picture = SOV_rural_mechanization_idea
+			
+			modifier = {
+				local_resources_factor = 0.1
 			}
 		}
 	}

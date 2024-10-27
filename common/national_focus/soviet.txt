@@ -470,7 +470,8 @@
 		prerequisite = { focus = SOV_embrace_communism }
         available_if_capitulated = no
         completion_reward = {
-		    add_political_power = 100
+		    add_manpower = 15000
+			add_ideas = SOV_red_guard_idea
 		}
 	}
 	
@@ -484,7 +485,34 @@
 		prerequisite = { focus = SOV_red_guard }
         available_if_capitulated = no
         completion_reward = {
-		    add_political_power = 100
+			division_template = {
+				name = "rabochaya militsiya"		
+				division_names_group = SOV_INF_01
+				is_locked = yes
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+				}
+				support = { 
+					recon = { x = 0 y = 0 } 
+				} 
+				priority = 0
+			}
+			219 = {
+				create_unit = {
+					division = "division_template = \"rabochaya militsiya\" start_experience_factor = 0.01 start_equipment_factor = 0.75"
+					owner = ROOT
+					count = 6
+				}
+			}	
+		    swap_ideas = { 
+				remove_idea = SOV_red_guard_idea
+				add_idea = SOV_red_guard_idea_2
+			}
 		}
 	}
 	
@@ -498,7 +526,9 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_embrace_communism }
         completion_reward = {
-		    add_political_power = 100
+		    add_political_power = -50
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 	
@@ -512,7 +542,13 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_seize_the_means }
         completion_reward = {
-		    add_political_power = 100
+		    every_state = {
+				limit = {
+					is_owned_by = SOV
+					state_population > 1500000
+				}	
+				add_extra_state_shared_building_slots = 1
+			}	
 		}
 	}
 	
@@ -526,7 +562,30 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_collectivization_efforts }
         completion_reward = {
-		    add_political_power = 100
+			random_owned_controlled_state = {
+				limit = {
+					is_owned_by = SOV
+					has_state_category = rural
+					state_population > 1000000
+				}
+				increase_state_category = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_owned_by = SOV
+					has_state_category = rural
+					state_population > 1000000
+				}
+				increase_state_category = yes
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_owned_by = SOV
+					has_state_category = rural
+					state_population > 1000000
+				}
+				increase_state_category = yes
+			}
 		}
 	}
 	
@@ -540,7 +599,7 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_rural_development }
         completion_reward = {
-		    add_political_power = 100
+		    add_ideas = SOV_rural_mechanization_idea
 		}
 	}
 	
