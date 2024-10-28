@@ -39,7 +39,7 @@
 		relative_position_id = SOV_true_russia
 		x = 0
         y = 1
-        cost = 10
+        cost = 5
         available_if_capitulated = no
 		prerequisite = { focus = SOV_true_russia }
         completion_reward = {
@@ -53,7 +53,7 @@
 		relative_position_id = SOV_february_values
 		x = 2
         y = 1
-        cost = 10
+        cost = 5
         available_if_capitulated = no
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_hold_elections }
@@ -70,7 +70,7 @@
 		relative_position_id = SOV_february_values
 		x = -2
         y = 1
-        cost = 10
+        cost = 15
         available_if_capitulated = no
 		available = {
 			communism > 0.3
@@ -121,7 +121,7 @@
 		relative_position_id = SOV_stablish_SSR
 		x = 0
         y = 1
-        cost = 10
+        cost = 2
 		prerequisite = { focus = SOV_stablish_SSR }
         available_if_capitulated = no
         completion_reward = {
@@ -131,39 +131,38 @@
 	}
 	
 	focus = {
-	    id = SOV_end_of_compromise
-		icon = GFX_SOV_end_of_compromise
+	    id = SOV_socialism_in_one_country
+		icon = GFX_SOV_socialism_in_one_country
 		relative_position_id = SOV_soviet_congress
-		x = -8
-        y = 1
-        cost = 10
-		prerequisite = { focus = SOV_soviet_congress }
-		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
+		x = -5
+        y = 3
+        cost = 2
         available_if_capitulated = no
-		available = {
-			always = no
-		}	
+		prerequisite = { focus = SOV_embrace_communism focus = SOV_true_socialism }
         completion_reward = {
-			add_country_leader_role = {
-				character = "SOV_yezhov"
-				country_leader = {
-					ideology = marxism
-					traits =
-					expire="1965.1.1.1"
-				}
-				promote_leader = yes
-			}
-			set_cosmetic_tag = SOV_YEZ
+		    add_political_power = 100
 		}
 	}
 	
+	
+	
+ ######  #     # #    # #     #    #    ######  ### #     # 
+ #     # #     # #   #  #     #   # #   #     #  #  ##    # 
+ #     # #     # #  #   #     #  #   #  #     #  #  # #   # 
+ ######  #     # ###    ####### #     # ######   #  #  #  # 
+ #     # #     # #  #   #     # ####### #   #    #  #   # # 
+ #     # #     # #   #  #     # #     # #    #   #  #    ## 
+ ######   #####  #    # #     # #     # #     # ### #     # 
+ 
+ 
+ 
 	focus = {
 	    id = SOV_bukharins_legacy
 		icon = GFX_SOV_bukharins_legacy
 		relative_position_id = SOV_soviet_congress
 		x = 0
         y = 1
-        cost = 10
+        cost = 5
 		prerequisite = { focus = SOV_soviet_congress }
 		mutually_exclusive = { focus = SOV_end_of_compromise focus = SOV_trotsky }
         available_if_capitulated = no
@@ -171,20 +170,6 @@
 			always = no
 		}
         completion_reward = {
-		}
-	}
-	
-	focus = {
-	    id = SOV_socialism_in_one_country
-		icon = GFX_SOV_socialism_in_one_country
-		relative_position_id = SOV_soviet_congress
-		x = -5
-        y = 3
-        cost = 10
-        available_if_capitulated = no
-		prerequisite = { focus = SOV_embrace_communism focus = SOV_true_socialism }
-        completion_reward = {
-		    add_political_power = 100
 		}
 	}
 	
@@ -442,6 +427,45 @@
 		}
 	}
 	
+	
+	
+ #     # ####### ####### #     # ####### #     # 
+  #   #  #            #  #     # #     # #     # 
+   # #   #           #   #     # #     # #     # 
+    #    #####      #    ####### #     # #     # 
+    #    #         #     #     # #     #  #   #  
+    #    #        #      #     # #     #   # #   
+    #    ####### ####### #     # #######    #    
+	
+	
+	
+	focus = {
+	    id = SOV_end_of_compromise
+		icon = GFX_SOV_end_of_compromise
+		relative_position_id = SOV_soviet_congress
+		x = -8
+        y = 1
+        cost = 5
+		prerequisite = { focus = SOV_soviet_congress }
+		mutually_exclusive = { focus = SOV_bukharins_legacy focus = SOV_trotsky }
+        available_if_capitulated = no
+		available = {
+			always = no
+		}	
+        completion_reward = {
+			add_country_leader_role = {
+				character = "SOV_yezhov"
+				country_leader = {
+					ideology = marxism
+					traits =
+					expire="1965.1.1.1"
+				}
+				promote_leader = yes
+			}
+			set_cosmetic_tag = SOV_YEZ
+		}
+	}
+	
 	focus = {
 	    id = SOV_embrace_communism
 		icon = GFX_SOV_embrace_communism
@@ -569,6 +593,7 @@
 					state_population > 1000000
 				}
 				increase_state_category = yes
+				prioritize = { 219 }
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -577,6 +602,7 @@
 					state_population > 1000000
 				}
 				increase_state_category = yes
+				prioritize = { 263 }
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -585,6 +611,7 @@
 					state_population > 1000000
 				}
 				increase_state_category = yes
+				prioritize = { 217 }
 			}
 		}
 	}
@@ -643,7 +670,23 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_nationalization_efforts }
         completion_reward = {
-		    
+		    random_core_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				prioritize = { 223 249 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -657,7 +700,8 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_heavy_industry }
         completion_reward = {
-		    add_political_power = 100
+		    add_ideas = SOV_movilized_workers
+			add_stability = -0.05
 		}
 	}
 	
@@ -671,7 +715,31 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_war_ready_economy }
         completion_reward = {
-		    add_political_power = 100
+		    if = {
+				limit = {
+					OR = {
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+					}	
+				}
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 15000
+					producer = SOV
+				}
+			}	
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = tot_economic_mobilisation
+							has_idea = war_economy
+						}	
+					}
+				}
+				add_ideas = war_economy
+			}
 		}
 	}
 	
@@ -714,17 +782,15 @@
         y = 1
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_state_economy }
-		prerequisite = { focus = SOV_rural_development }
-		prerequisite = { focus = SOV_heavy_industry }
+		prerequisite = { focus = SOV_rural_development focus = SOV_heavy_industry focus = SOV_state_economy }
         completion_reward = {
-		    add_political_power = 100
+		    upgrade_economy_law = yes
 		}
 	}
 	
 	focus = {
-	    id = SOV_two_year_plan
-		icon = GFX_SOV_two_year_plan
+	    id = SOV_four_year_plan
+		icon = GFX_SOV_four_year_plan
 		relative_position_id = SOV_workforce_mobilization
 		x = 0
         y = 1
@@ -732,19 +798,19 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_workforce_mobilization }
         completion_reward = {
-		    add_political_power = 100
+		    add_timed_idea = { idea = SOV_four_year_plan_idea days = 730 }
 		}
 	}
 	
 	focus = {
 	    id = SOV_abolish_currency
 		icon = GFX_SOV_abolish_currency
-		relative_position_id = SOV_two_year_plan
+		relative_position_id = SOV_four_year_plan
 		x = -1
         y = 2
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_two_year_plan }
+		prerequisite = { focus = SOV_four_year_plan }
 		mutually_exclusive = { focus = SOV_state_controlled_currency }
         completion_reward = {
 		    add_political_power = 100
@@ -797,12 +863,12 @@
 	focus = {
 	    id = SOV_state_controlled_currency
 		icon = GFX_SOV_credits_system
-		relative_position_id = SOV_two_year_plan
+		relative_position_id = SOV_four_year_plan
 		x = 1
         y = 2
         cost = 10
         available_if_capitulated = no
-		prerequisite = { focus = SOV_two_year_plan }
+		prerequisite = { focus = SOV_four_year_plan }
 		mutually_exclusive = { focus = SOV_abolish_currency }
         completion_reward = {
 		    add_political_power = 100
