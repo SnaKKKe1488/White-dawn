@@ -12,10 +12,26 @@
  SOV_stablish_SSR_desc:0 "The time has come to restore the Russian Soviet Federative Socialist Republic (RSFSR) as the vanguard of global socialism. By rebuilding the state along socialist lines, we can reunite the workers and peasants under a single banner, free from the chaos of civil war. The RSFSR will be a beacon of revolution, ready to spread its influence both within and beyond our borders."
  SOV_soviet_congress:0 "Convene The Soviet"
  SOV_soviet_congress_desc:0 "By convening the Soviet, we will gather the key representatives of the workers, peasants, and intellectuals to determine the party’s direction. With the old regime collapsing and new factions vying for control, the question of who will lead the revolution is more critical than ever. Will it be a revolutionary vanguard or a more moderate figure who takes the reins of power?"
+ 
  SOV_bukharins_legacy:0 "The Pragmatic Revolution"
  SOV_bukharins_legacy_desc:0 "Bukharin’s vision of socialism, based on cooperation between peasants and workers, offers a pragmatic path forward. His ideas of gradual collectivization, market socialism, and political compromise can stabilize Russia while keeping the dream of socialism alive. Under his mantle, we may build a state that avoids the extremism of both the past and present, offering hope for all."
+ 
  SOV_end_of_compromise:0 "The Iron Terror"
- SOV_end_of_compromise_desc:0 "Under Nikolai Yezhov, socialism is not just an economic model, but a relentless pursuit of ideological purity. Known for his role as head of the NKVD, Yezhov’s rule would see the intensification of internal repression, purging enemies of the revolution with an iron fist. This path emphasizes total control of the state, rapid forced industrialization, and rooting out opposition with brutal efficiency. Yezhov’s vision is one of a Soviet state forged in blood and iron, where any dissent is met with immediate and crushing force."
+ SOV_end_of_compromise_desc:0 "Under Nikolai Yezhov, socialism is not just an economic model, but a relentless pursuit of ideological purity. Yezhov’s rule would see the intensification of internal repression, purging enemies of the revolution with an iron fist. Yezhov’s vision is one of a Soviet state forged in blood and iron, where any dissent is met with immediate and crushing force."
+ SOV_embrace_communism:0 "Embrace Communist Ideals"
+ SOV_embrace_communism_desc:0 ""
+ SOV_seize_the_means:0 "Seize The Means"
+ SOV_seize_the_means_desc:0 ""
+ SOV_centralized_economy:0 "Centralized Economy"
+ SOV_centralized_economy_desc:0 ""
+ SOV_state_economy:0 "State Commanded Economy"
+ SOV_state_economy_desc:0 ""
+ SOV_nationalization_efforts:0 "Nationalization Efforts"
+ SOV_nationalization_efforts_desc:0 ""
+ SOV_war_ready_economy:0 "If War Comes Tomorrow"
+ SOV_war_ready_economy_desc:0 ""
+ SOV_workforce_mobilization:0 "Mobilize The Workers"
+ 
  SOV_trotsky:0 "The Revolutionary Vanguard"
  SOV_trotsky_desc:0 "Lev Kamenev stands for a return to the democratic ideals of early Bolshevism and the continued internationalist mission of the revolution. Kamenev’s leadership offers a vision of socialism based on internal party democracy and global worker solidarity, rejecting authoritarianism in favor of a more participatory system. His path seeks to empower worker councils (soviets), encourage open debate within the party, and focus on spreading the revolution abroad. Though idealistic, Kamenev’s commitment to gradual reform and worker-driven governance could be vulnerable to opposition from hardliners eager for more decisive leadership."
  
