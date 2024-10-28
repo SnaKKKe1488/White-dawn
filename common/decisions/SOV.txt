@@ -24,7 +24,7 @@ political_actions = {
 	}	
 }
 
-SOV_four_year_plan = {
+SOV_four_year_plan_category = {
 	
 	SOV_4YP_1 = {
 		activation = {
@@ -45,15 +45,7 @@ SOV_four_year_plan = {
 		}
 		available = {
 			SOV = {
-				219 = {
-					num_of_factories > 6
-				}
-				217 = {
-					num_of_factories > 4	
-				}
-				195 = {
-					num_of_factories > 6	
-				}
+				num_of_factories > 100
 			}	
 		}
 		visible = {

@@ -10,7 +10,7 @@ SOV_political_efforts = {
 	}
 }
 
-SOV_four_year_plan = {
+SOV_four_year_plan_category = {
 	icon = generic_propaganda
 	priority = 90
 
