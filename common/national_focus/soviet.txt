@@ -799,6 +799,7 @@
 		prerequisite = { focus = SOV_workforce_mobilization }
         completion_reward = {
 		    add_timed_idea = { idea = SOV_four_year_plan_idea days = 730 }
+			set_variable = { SOV_4YP_progress_1 = 0 }
 		}
 	}
 	

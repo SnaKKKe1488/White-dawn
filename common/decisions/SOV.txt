@@ -30,11 +30,36 @@ SOV_four_year_plan = {
 		activation = {
 			has_completed_focus = SOV_four_year_plan
 		}
-		available = {
-			has_civil_war = no
-			has_war = no
+		allowed = {
 			original_tag = SOV
 		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 219
+				state = 217
+				state = 195
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			SOV = {
+				219 = {
+					num_of_factories > 6
+				}
+				217 = {
+					num_of_factories > 4	
+				}
+				195 = {
+					num_of_factories > 6	
+				}
+			}	
+		}
+		visible = {
+			original_tag = SOV
+			has_completed_focus = SOV_four_year_plan
+		}	
 		cancel_trigger = {
 			has_war = yes
 			has_civil_war = yes
@@ -44,10 +69,12 @@ SOV_four_year_plan = {
 		days_mission_timeout = 240
 		selectable_mission = no
 		complete_effect = {
-			add_ideas = 
+			country_event = { id = SOV_4YP_succeeds.1 hours = 1 }
 		}
+		cancel_effect = {
+			#country_event = { id = }
+		}	
 		timeout_effect = {
-			add_ideas = 
 		}
 	}	
 }
