@@ -23,3 +23,31 @@ political_actions = {
 		}
 	}	
 }
+
+SOV_four_year_plan = {
+	
+	SOV_4YP_1 = {
+		activation = {
+			has_completed_focus = SOV_four_year_plan
+		}
+		available = {
+			has_civil_war = no
+			has_war = no
+			original_tag = SOV
+		}
+		cancel_trigger = {
+			has_war = yes
+			has_civil_war = yes
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 240
+		selectable_mission = no
+		complete_effect = {
+			add_ideas = 
+		}
+		timeout_effect = {
+			add_ideas = 
+		}
+	}	
+}

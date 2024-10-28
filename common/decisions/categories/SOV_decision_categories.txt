@@ -9,3 +9,13 @@ SOV_political_efforts = {
 		}	
 	}
 }
+
+SOV_four_year_plan = {
+	icon = generic_propaganda
+	priority = 90
+
+	visible = {
+		original_tag = SOV
+		has_idea = SOV_four_year_plan_idea
+	}
+}
