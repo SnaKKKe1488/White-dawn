@@ -12,6 +12,7 @@ SOV_political_efforts = {
 
 SOV_four_year_plan_category = {
 	icon = generic_propaganda
+	picture = GFX_SOV_four_year_plan_category
 	priority = 90
 
 	visible = {

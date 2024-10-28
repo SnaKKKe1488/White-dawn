@@ -1,0 +1,7 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_SOV_four_year_plan_category"
+		texturefile = "gfx/interface/decisions/SOV_four_year_plan_category.dds"
+	}	
+}
