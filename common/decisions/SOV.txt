@@ -28,6 +28,7 @@ SOV_four_year_plan_category = {
 	
 	SOV_4YP_1 = {
 		priority = 10
+		fire_only_once = yes
 		activation = {
 			has_completed_focus = SOV_four_year_plan
 		}
@@ -60,15 +61,19 @@ SOV_four_year_plan_category = {
 			has_completed_focus = SOV_four_year_plan
 		}	
 		cancel_trigger = {
-			has_war = yes
-			has_civil_war = yes
+			hidden_trigger = {
+				has_war = yes
+				has_civil_war = yes
+			}	
 		}
 		icon = mission_icon
 		is_good = no
 		days_mission_timeout = 365
 		selectable_mission = no
 		complete_effect = {
-			country_event = { id = SOV_4YP_succeeds.1 hours = 1 }
+			hidden_effect = {
+				country_event = { id = SOV_4YP_succeeds.1 hours = 1 }
+			}	
 		}
 		cancel_effect = {
 			if = {
@@ -76,11 +81,15 @@ SOV_four_year_plan_category = {
 					SOV = {
 						num_of_factories > 100
 					}
+				}
+				hidden_effect = {
+					country_event = { id =  }
 				}	
-				country_event = { id =  }
 			}
 			else = {
-				country_event = { id = SOV_4YP_fails.1 hours =1 }
+				hidden_effect = {
+					country_event = { id = SOV_4YP_fails.1 hours =1 }
+				}	
 			}	
 		}	
 		timeout_effect = {
@@ -93,7 +102,9 @@ SOV_four_year_plan_category = {
 				country_event = { id =  }
 			}
 			else = {
-				country_event = { id = SOV_4YP_fails.1 hours =1 }
+				hidden_effect = {
+					country_event = { id = SOV_4YP_fails.1 hours =1 }
+				}	
 			}	
 		}
 	}
@@ -113,8 +124,6 @@ SOV_four_year_plan_category = {
 		visible = {
 			has_active_mission = SOV_4YP_1
 		}
-	
-		cost = 25
 		
 		days_remove = 90
 
@@ -123,6 +132,91 @@ SOV_four_year_plan_category = {
 		modifier = {
 			industrial_capacity_factory = -0.3
 			production_speed_buildings_factor = 0.3
+		}
+	}
+	
+	SOV_4YP_seize_farmers_land = {
+		icon = decision_category_generic_communism
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 8
+	
+		available = {
+		} 
+		
+		visible = {
+			has_active_mission = SOV_4YP_1
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						size < 1
+						include_locked = yes
+					}
+					state_population > 1000000
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						size < 1
+						include_locked = yes
+					}
+					state_population > 1000000
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						size < 1
+						include_locked = yes
+					}
+					state_population > 1000000
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+
+		cost = 50
+	}
+	
+	SOV_4YP_mandatory_labor = {
+		icon = decision_category_generic_communism
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 7
+	
+		available = {
+		} 
+		
+		visible = {
+			has_active_mission = SOV_4YP_1
+		}
+	
+		cost = 25
+		
+		days_remove = 30
+		
+		complete_effect = {
+			add_manpower = -15000
+		}	
+
+		modifier = {
+			production_speed_buildings_factor = 0.15
 		}
 	}
 }

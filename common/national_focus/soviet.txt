@@ -589,7 +589,6 @@
         completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					is_owned_by = SOV
 					has_state_category = rural
 					state_population > 1000000
 				}
@@ -598,7 +597,6 @@
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_owned_by = SOV
 					has_state_category = rural
 					state_population > 1000000
 				}
@@ -607,7 +605,6 @@
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_owned_by = SOV
 					has_state_category = rural
 					state_population > 1000000
 				}
@@ -641,9 +638,8 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_seize_the_means }
         completion_reward = {
-		    random_core_state = {
+		    random_owned_controlled_state = {
 				limit = {
-					is_controlled_by = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -671,9 +667,8 @@
         available_if_capitulated = no
 		prerequisite = { focus = SOV_nationalization_efforts }
         completion_reward = {
-		    random_core_state = {
+		    random_owned_controlled_state = {
 				limit = {
-					is_controlled_by = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
