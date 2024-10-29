@@ -27,6 +27,7 @@ political_actions = {
 SOV_four_year_plan_category = {
 	
 	SOV_4YP_1 = {
+		priority = 10
 		activation = {
 			has_completed_focus = SOV_four_year_plan
 		}
@@ -44,8 +45,14 @@ SOV_four_year_plan_category = {
 			highlight_color_before_active = 2
 		}
 		available = {
-			SOV = {
-				num_of_factories > 100
+			hidden_trigger = {
+				always = NO
+			}	
+			custom_trigger_tooltip = {
+				tooltip = "The Soviet Union Must Have More Than 100 Factories At The End Of The Year"
+				SOV = {
+					num_of_factories > 100
+				}
 			}	
 		}
 		visible = {
@@ -58,15 +65,64 @@ SOV_four_year_plan_category = {
 		}
 		icon = mission_icon
 		is_good = no
-		days_mission_timeout = 240
+		days_mission_timeout = 365
 		selectable_mission = no
 		complete_effect = {
 			country_event = { id = SOV_4YP_succeeds.1 hours = 1 }
 		}
 		cancel_effect = {
-			#country_event = { id = }
+			if = {
+				limit = {
+					SOV = {
+						num_of_factories > 100
+					}
+				}	
+				country_event = { id =  }
+			}
+			else = {
+				country_event = { id = SOV_4YP_fails.1 hours =1 }
+			}	
 		}	
 		timeout_effect = {
+			if = {
+				limit = {
+					SOV = {
+						num_of_factories > 100
+					}
+				}	
+				country_event = { id =  }
+			}
+			else = {
+				country_event = { id = SOV_4YP_fails.1 hours =1 }
+			}	
 		}
-	}	
+	}
+
+	SOV_4YP_divert_workers = {
+		icon = decision_category_generic_communism
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 9
+	
+		available = {
+		} 
+		
+		visible = {
+			has_active_mission = SOV_4YP_1
+		}
+	
+		cost = 25
+		
+		days_remove = 90
+
+		cost = 50
+
+		modifier = {
+			industrial_capacity_factory = -0.3
+			production_speed_buildings_factor = 0.3
+		}
+	}
 }
