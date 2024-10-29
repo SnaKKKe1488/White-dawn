@@ -41,6 +41,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_SOV_embrace_communism"
+		texturefile = "gfx/interface/goals/GFX_SOV_embrace_communism.dds"			
+	}
+	
+	SpriteType = {
 		name = "GFX_SOV_trotsky"
 		texturefile = "gfx/interface/goals/GFX_SOV_trotsky.png"			
 	}
