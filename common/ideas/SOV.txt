@@ -142,5 +142,15 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 			}
 		}
+		
+		SOV_dissolved_duma = {
+			picture = SOV_duma_idea
+			
+			modifier = {
+				political_power_factor = 0.5
+				stability_weekly_factor = -0.005
+				communism_drift = -0.05
+			}
+		}
 	}
 }

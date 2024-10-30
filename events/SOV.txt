@@ -1,4 +1,5 @@
 add_namespace = soviet
+add_namespace = soviet_duma
 
 country_event = {
 
@@ -129,4 +130,36 @@ country_event = {
 		
 		complete_national_focus = SOV_end_of_compromise
 	}
+}	
+	
+country_event = {
+	id = soviet_duma.1
+	title = soviet_duma.1.t
+	desc = soviet_duma.1.desc
+	picture = GFX_report_event_SOV_coup
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = soviet_duma.1.a
+		add_timed_idea = { idea = SOV_dissolved_duma  days = 140 }
+		country_event = { id = soviet_duma.2 hours = 12 }
+	}	
+}
+
+country_event = {
+	id = soviet_duma.2
+	title = soviet_duma.2.t
+	desc = soviet_duma.2.desc
+	picture = GFX_report_event_SOV_coup
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = soviet_duma.2.a
+	}	
 }
