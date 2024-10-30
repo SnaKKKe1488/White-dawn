@@ -66,7 +66,7 @@ SOV_four_year_plan_category = {
 				has_civil_war = yes
 			}	
 		}
-		icon = mission_icon
+		icon = GFX_decision_generic_industry
 		is_good = no
 		days_mission_timeout = 365
 		selectable_mission = no
@@ -110,7 +110,7 @@ SOV_four_year_plan_category = {
 	}
 
 	SOV_4YP_divert_workers = {
-		icon = decision_generic_military
+		icon = GFX_decision_eng_blackshirt_march
 	
 		allowed = {
 			original_tag = SOV
@@ -136,7 +136,7 @@ SOV_four_year_plan_category = {
 	}
 	
 	SOV_4YP_seize_farmers_land = {
-		icon = decision_eng_trade_unions_demand
+		icon = GFX_decision_eng_trade_unions_demand
 	
 		allowed = {
 			original_tag = SOV
@@ -192,7 +192,7 @@ SOV_four_year_plan_category = {
 	}
 	
 	SOV_4YP_mandatory_labor = {
-		icon = decision_category_generic_communism
+		icon = GFX_decision_SOV_labor
 	
 		allowed = {
 			original_tag = SOV
@@ -221,7 +221,7 @@ SOV_four_year_plan_category = {
 	}
 	
 	SOV_4YP_raise_salaries = {
-		icon = decision_hol_attract_foreign_investors
+		icon = GFX_decision_hol_attract_foreign_investors
 	
 		allowed = {
 			original_tag = SOV
@@ -248,7 +248,7 @@ SOV_four_year_plan_category = {
 	}
 	
 	SOV_4YP_lower_work_quotas = {
-		icon = decision_category_SOV_bills
+		icon = GFX_decision_SOV_bills
 	
 		allowed = {
 			original_tag = SOV

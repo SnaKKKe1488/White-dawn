@@ -1,0 +1,12 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_decision_SOV_bills"
+		texturefile = "gfx/interface/decisions/decision_SOV_bills.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_decision_SOV_labor"
+		texturefile = "gfx/interface/decisions/decision_SOV_labor.dds"
+	}
+}
