@@ -11,7 +11,7 @@ SOV_political_efforts = {
 }
 
 SOV_four_year_plan_category = {
-	icon = generic_propaganda
+	icon = decision_category_generic_industry
 	picture = GFX_SOV_four_year_plan_category
 	priority = 90
 

@@ -60,7 +60,7 @@
         completion_reward = {
 			add_stability = -0.15
 			set_country_flag = SOV_coup_instated
-			country_event = { id = soviet_election.4 hours 48 }
+			country_event = { id = soviet_election.4 hours = 48 }
 		}
 	}
 	
@@ -796,6 +796,7 @@
         completion_reward = {
 		    add_timed_idea = { idea = SOV_four_year_plan_idea days = 730 }
 			set_variable = { SOV_4YP_progress_1 = 0 }
+			country_event = { id = soviet_4YP_starts.1 days = 1 }
 		}
 	}
 	

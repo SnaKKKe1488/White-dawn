@@ -1,7 +1,7 @@
 political_actions = {
 	
 	SOV_socialist_propaganda = {
-		icon = decision_category_generic_communism
+		icon = decision_generic_industry
 	
 		allowed = {
 			original_tag = SOV
@@ -110,7 +110,7 @@ SOV_four_year_plan_category = {
 	}
 
 	SOV_4YP_divert_workers = {
-		icon = decision_category_generic_communism
+		icon = decision_generic_military
 	
 		allowed = {
 			original_tag = SOV
@@ -136,7 +136,7 @@ SOV_four_year_plan_category = {
 	}
 	
 	SOV_4YP_seize_farmers_land = {
-		icon = decision_category_generic_communism
+		icon = decision_eng_trade_unions_demand
 	
 		allowed = {
 			original_tag = SOV
@@ -217,6 +217,64 @@ SOV_four_year_plan_category = {
 
 		modifier = {
 			production_speed_buildings_factor = 0.15
+		}
+	}
+	
+	SOV_4YP_raise_salaries = {
+		icon = decision_hol_attract_foreign_investors
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 6
+	
+		available = {
+		} 
+		
+		visible = {
+			has_active_mission = SOV_4YP_1
+		}
+	
+		cost = 25
+		
+		days_remove = 90	
+
+		modifier = {
+			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.1
+		}
+	}
+	
+	SOV_4YP_lower_work_quotas = {
+		icon = decision_category_SOV_bills
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 5
+	
+		available = {
+		} 
+		
+		visible = {
+			has_active_mission = SOV_4YP_1
+		}
+	
+		cost = 0
+		
+		days_remove = 90
+		
+		complete_effect = {
+			add_political_power = 75
+		}	
+
+		modifier = {
+			stability_weekly_factor = 0.005
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.15
 		}
 	}
 }
