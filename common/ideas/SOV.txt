@@ -152,5 +152,15 @@ ideas = {
 				communism_drift = -0.05
 			}
 		}
+		
+		SOV_soviet_constitution_idea = {
+			picture = SOV_soviet_constitution_idea
+			
+			modifier = {
+				communism_drift = 0.02
+				war_support_weekly_factor = 0.001
+				stability_weekly_factor = 0.001
+			}
+		}
 	}
 }

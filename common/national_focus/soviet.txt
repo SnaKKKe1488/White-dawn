@@ -1027,7 +1027,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_dissolve_duma }
         completion_reward = {
-		    add_political_power = 100
+		    add_ideas = SOV_soviet_constitution_idea
 		}
 	}
 	
