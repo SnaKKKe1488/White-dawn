@@ -1059,7 +1059,8 @@ focus_tree = {
 				popularity = -0.1
 			}
 			unlock_decision_category_tooltip = SOV_purge_party_yez
-			set_variable = { SOV_yez_party = 95 }
+			set_variable = { SOV_yez_party_strenght = 95 }
+			set_variable = { SOV_yez_party_loyalty = 05 }
 		}
 	}
 	
