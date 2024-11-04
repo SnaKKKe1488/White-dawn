@@ -277,6 +277,9 @@ SOV_four_year_plan_category = {
 			industrial_capacity_factory = -0.15
 		}
 	}
+}	
+	
+SOV_purge_party_yez = {
 	
 	SOV_purge_party_yez = {
 		
@@ -297,7 +300,10 @@ SOV_four_year_plan_category = {
 			cost = 0
 		
 			complete_effect = {
-				add_political_power = 75
+				subtract_from_variable = {
+					var = SOV_yez_party
+					value = 30
+				}	
 			}	
 		}	
 	}
