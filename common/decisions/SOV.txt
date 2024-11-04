@@ -277,4 +277,28 @@ SOV_four_year_plan_category = {
 			industrial_capacity_factory = -0.15
 		}
 	}
+	
+	SOV_purge_party_yez = {
+		
+		SOV_test = {
+			icon = GFX_decision_SOV_bills
+			allowed = {
+				original_tag = SOV
+			}
+		
+			priority = 5
+	
+			available = {
+			} 
+		
+			visible = {
+			}
+	
+			cost = 0
+		
+			complete_effect = {
+				add_political_power = 75
+			}	
+		}	
+	}
 }

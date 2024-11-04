@@ -481,8 +481,8 @@ focus_tree = {
 		    add_popularity = {
 				ideology = communism
 				popularity = 0.15
-				add_political_power = -75
 			}
+			add_political_power = -75
 		}
 	}
 	
@@ -1041,7 +1041,25 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_soviet_constitution }
         completion_reward = {
-		    add_political_power = 100
+		    add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			unlock_decision_category_tooltip = SOV_purge_party_yez
+			set_variable = { SOV_yez_party = 95 }
 		}
 	}
 	
