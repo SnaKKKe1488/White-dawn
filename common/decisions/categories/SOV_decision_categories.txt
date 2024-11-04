@@ -23,6 +23,7 @@ SOV_four_year_plan_category = {
 
 SOV_purge_party_yez = {
 	icon = GFX_decision_category_generic_industry
+	picture = GFX_SOV_yez_party
 	priority = 80
 
 	visible = {
