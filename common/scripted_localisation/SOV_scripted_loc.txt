@@ -2,21 +2,24 @@ defined_text = {
 	name = GetPartyStrenghtYez
 	text = {
 		trigger = {
-			SOV = { check_variable = { SOV_yez_party > 70 } }
+			check_variable = { SOV_yez_party > 70 }
 		}
 		localization_key = SOV_party_strenght_yez_high
 	}
 	text = {
 		trigger = {
-			SOV = { check_variable = { SOV_yez_party < 70 } }
-			SOV = { check_variable = { SOV_yez_party > 30 } }
+			check_variable = { SOV_yez_party < 69 }
+			check_variable = { SOV_yez_party > 31 }
 		}
 		localization_key = SOV_party_strenght_yez_med
 	}
 	text = {
 		trigger = {
-			SOV = { check_variable { SOV_yez_party < 30 } }
+			check_variable { SOV_yez_party < 30 }
 		}
 		localization_key = SOV_party_strenght_yez_low
 	}
+	text = {
+		localization_key = SOV_error
+	}	
 }

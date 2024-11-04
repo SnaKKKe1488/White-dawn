@@ -281,30 +281,33 @@ SOV_four_year_plan_category = {
 	
 SOV_purge_party_yez = {
 	
-	SOV_purge_party_yez = {
+	SOV_test = {
+		icon = GFX_decision_SOV_bills
+		allowed = {
+			original_tag = SOV
+		}
 		
-		SOV_test = {
-			icon = GFX_decision_SOV_bills
-			allowed = {
-				original_tag = SOV
-			}
-		
-			priority = 5
+		priority = 5
 	
-			available = {
-			} 
+		available = {
+		} 
 		
-			visible = {
-			}
+		visible = {
+		}
 	
-			cost = 0
+		cost = 0
+			
+		days_remove = 2
+			
+		complete_effect = {
+			add_political_power = 1
+		}	
 		
-			complete_effect = {
-				subtract_from_variable = {
-					var = SOV_yez_party
-					value = 30
-				}	
+		remove_effect = {
+			subtract_from_variable = {
+				var = SOV_yez_party
+				value = 30
 			}	
 		}	
-	}
+	}	
 }
