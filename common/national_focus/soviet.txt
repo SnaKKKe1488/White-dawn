@@ -461,6 +461,7 @@ focus_tree = {
 					ideology = marxism
 					traits = {
 						short
+						heart_of_iron
 					}	
 					expire="1965.1.1.1"
 				}
