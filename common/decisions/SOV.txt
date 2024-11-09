@@ -35,7 +35,6 @@ SOV_four_year_plan_category = {
 		allowed = {
 			original_tag = SOV
 		}
-		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
 				state = 219
@@ -280,6 +279,49 @@ SOV_four_year_plan_category = {
 }	
 	
 SOV_purge_party_yez = {
+
+	SOV_party_strenght_bad = {
+		priority = 10
+		fire_only_once = no
+		activation = {
+			has_completed_focus = SOV_hammer_and_sickle
+		}
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			hidden_trigger = {
+				always = NO
+			}		
+		}
+		visible = {
+			original_tag = SOV
+			has_completed_focus = SOV_hammer_and_sickle
+		}	
+		cancel_trigger = {
+			hidden_trigger = {
+				has_completed_focus = SOV_one_party
+			}	
+		}
+		icon = GFX_decision_generic_industry
+		is_good = no
+		days_mission_timeout = 1
+		selectable_mission = no
+		complete_effect = {
+		}
+		cancel_effect = {
+			add_to_variable = {
+				var = SOV_yez_party_strenght
+				value = 25
+			}	
+		}	
+		timeout_effect = {
+			add_to_variable = {
+				var = SOV_yez_party_strenght
+				value = 25
+			}	
+		}
+	}
 	
 	SOV_test_minus_str = {
 		icon = GFX_decision_SOV_bills
