@@ -456,7 +456,14 @@ focus_tree = {
 		}	
         completion_reward = {
 			add_country_leader_role = {
-				character = "SOV_yezhov"
+				character = SOV_yezhov
+				country_leader = {
+					ideology = marxism
+					traits = {
+						short
+					}	
+					expire="1965.1.1.1"
+				}
 				promote_leader = yes
 			}
 			set_cosmetic_tag = SOV_YEZ
