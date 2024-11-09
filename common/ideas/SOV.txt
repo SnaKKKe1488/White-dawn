@@ -164,5 +164,14 @@ ideas = {
 				stability_weekly_factor = 0.001
 			}
 		}
+		
+		SOV_commissariat_idea = {
+			picture = SOV_commissariat_idea
+			
+			modifier = {
+				defensive_war_stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+		}
 	}
 }

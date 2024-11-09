@@ -1102,7 +1102,8 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_soviet_constitution }
         completion_reward = {
-		    add_political_power = 100
+		    add_stability = -0.1
+			add_ideas = SOV_commissariat_idea
 		}
 	}
 	
