@@ -457,11 +457,6 @@ focus_tree = {
         completion_reward = {
 			add_country_leader_role = {
 				character = "SOV_yezhov"
-				country_leader = {
-					ideology = marxism
-					traits =
-					expire="1965.1.1.1"
-				}
 				promote_leader = yes
 			}
 			set_cosmetic_tag = SOV_YEZ
@@ -1088,7 +1083,7 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_soviet_constitution }
         completion_reward = {
-		    add_political_power = 100
+		    
 		}
 	}
 	

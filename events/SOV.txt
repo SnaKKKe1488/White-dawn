@@ -1,4 +1,5 @@
 add_namespace = soviet
+add_namespace = soviet_election
 add_namespace = soviet_duma
 
 country_event = {

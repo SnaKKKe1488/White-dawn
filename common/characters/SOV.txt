@@ -49,10 +49,11 @@ characters={
 				large = "gfx/leaders/SOV/portrait_SOV_yezhov.png"
 			}
 		}
-		country_leader = {
+		country_leader={
 			ideology = socialism
+			traits = { short_trait }
 			expire = "1965.1.1.1"
-			id = -1
+			id=-1
 		}
 	}
 }	
