@@ -1123,27 +1123,16 @@ focus_tree = {
 		icon = GFX_SOV_vigilance
 		relative_position_id = SOV_commissariat
 		x = -1
-        y = 1
+        y = 2
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_commissariat }
 		prerequisite = { focus = SOV_protect_revolution }
         completion_reward = {
-		    add_political_power = 100
-		}
-	}
-	
-	focus = {
-	    id = SOV_peoples_vanguard
-		icon = GFX_SOV_peoples_vanguard
-		relative_position_id = SOV_vigilance
-		x = 0
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-		prerequisite = { focus = SOV_vigilance }
-        completion_reward = {
-		    add_political_power = 100
+		    create_intelligence_agency = {
+				name = "G.R.U"
+				icon = GFX_intelligence_agency_logo_agency
+			}
 		}
 	}
 	
@@ -1157,7 +1146,10 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_commissariat }
         completion_reward = {
-		    add_political_power = 100
+		    swap_ruler_traits = {
+				remove = revolution_protector
+				add = peoples_shield
+			}	
 		}
 	}
 	
