@@ -1072,7 +1072,7 @@ focus_tree = {
 			clamp_variable = {
 				var = SOV_yez_party_strenght
 				min = 0
-				max 100
+				max = 100
 			}	
 		}
 	}

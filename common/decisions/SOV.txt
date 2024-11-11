@@ -319,7 +319,16 @@ SOV_purge_party_yez = {
 			add_to_variable = {
 				var = SOV_yez_party_strenght
 				value = 25
+			}
+			if = {
+				limit = {
+					check_variable = { SOV_yez_party_strenght > 100 }
+				}
+				set_variable = { SOV_yez_party_strenght	= 100 }
 			}	
+			hidden_effect = {
+				activate_mission = SOV_party_strenght_bad
+			}
 		}
 	}
 	
