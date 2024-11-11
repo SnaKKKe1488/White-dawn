@@ -1064,6 +1064,16 @@ focus_tree = {
 			unlock_decision_category_tooltip = SOV_purge_party_yez
 			set_variable = { SOV_yez_party_strenght = 95 }
 			set_variable = { SOV_yez_party_loyalty = 05 }
+			clamp_variable = {
+				var = SOV_yez_party_loyalty
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = SOV_yez_party_strenght
+				min = 0
+				max 100
+			}	
 		}
 	}
 	
@@ -1163,7 +1173,10 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_commissariat }
         completion_reward = {
-		    add_political_power = 100
+		    swap_ideas = {
+				remove_idea = SOV_commissariat_idea
+				add_idea = SOV_commissariat_idea_2
+			}	
 		}
 	}
 	

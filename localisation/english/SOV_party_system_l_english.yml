@@ -1,6 +1,6 @@
 ﻿l_english:
  SOV_purge_party_yez:0 "Purging The Party"
- SOV_purge_party_yez_desc:0 "\n \n \n \n \n\nParty Strenght: [SOV.GetPartyStrenghtYez] \nParty Loyalty: [SOV.GetPartyLoyaltyYez]"
+ SOV_purge_party_yez_desc:0 "\n\nParty Strenght: [?SOV_yez_party_strenght|R] ( [SOV.GetPartyStrenghtYez] ) \n\nParty Loyalty: [?SOV_yez_party_loyalty|R] ( [SOV.GetPartyLoyaltyYez] )"
  SOV_party_strenght_yez_high:0 "§RHIGH§!"
  SOV_party_strenght_yez_med:0 "§YMEDIUM§!"
  SOV_party_strenght_yez_low:0 "§GLOW§!"

@@ -174,12 +174,13 @@ ideas = {
 			}
 		}
 		
-		SOV_commissariat_idea = {
+		SOV_commissariat_idea_2 = {
 			picture = SOV_commissariat_idea
 			
 			modifier = {
-				defensive_war_stability_factor = 0.1
-				party_popularity_stability_factor = 0.1
+				defensive_war_stability_factor = 0.25
+				party_popularity_stability_factor = 0.25
+				war_support_weekly_factor = 0.1
 			}
 		}
 	}
