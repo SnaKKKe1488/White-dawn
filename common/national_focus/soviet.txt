@@ -800,8 +800,9 @@ focus_tree = {
 		prerequisite = { focus = SOV_workforce_mobilization }
         completion_reward = {
 		    add_timed_idea = { idea = SOV_four_year_plan_idea days = 730 }
-			set_variable = { SOV_4YP_progress_1 = 0 }
-			country_event = { id = soviet_4YP_starts.1 days = 1 }
+			set_variable = { SOV_4YP_completed_phases = 0 }
+			set_variable = { SOV_4YP_failed_phases = 0 }
+			country_event = { id = soviet_4YP_starts.1 }
 			activate_mission = SOV_4YP_1
 		}
 	}

@@ -140,8 +140,6 @@ ideas = {
 			picture = SOV_four_year_plan_idea
 			
 			modifier = {
-				consumer_goods_factor = -0.1
-				production_speed_buildings_factor = 0.2
 			}
 		}
 		

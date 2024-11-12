@@ -30,17 +30,19 @@ SOV_four_year_plan_category = {
 		priority = 10
 		fire_only_once = yes
 		activation = {
-			has_completed_focus = SOV_four_year_plan
 		}
 		allowed = {
 			original_tag = SOV
+			NOT = {
+				has_active_mission = SOV_4YP_2
+			}	
 		}
 		available = {
 			hidden_trigger = {
-				always = NO
+				always = no
 			}	
 			custom_trigger_tooltip = {
-				tooltip = "The Soviet Union Must Have More Than 100 Factories At The End Of The Year"
+				tooltip = "The Soviet Union Must Have More Than 100 Factories By The End Of The Year"
 				SOV = {
 					num_of_factories > 100
 				}
@@ -61,11 +63,11 @@ SOV_four_year_plan_category = {
 		}
 		icon = GFX_decision_generic_industry
 		is_good = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		selectable_mission = no
 		complete_effect = {
 			hidden_effect = {
-				country_event = { id = soviet_4YP_succeeds.1 hours = 1 }
+				country_event = { id = soviet_4YP_succeeds.1 }
 			}	
 		}
 		cancel_effect = {
@@ -102,6 +104,7 @@ SOV_four_year_plan_category = {
 		priority = 9
 	
 		available = {
+			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -128,6 +131,7 @@ SOV_four_year_plan_category = {
 		priority = 8
 	
 		available = {
+			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -184,6 +188,7 @@ SOV_four_year_plan_category = {
 		priority = 7
 	
 		available = {
+			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -213,6 +218,7 @@ SOV_four_year_plan_category = {
 		priority = 6
 	
 		available = {
+			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -240,6 +246,7 @@ SOV_four_year_plan_category = {
 		priority = 5
 	
 		available = {
+			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -260,8 +267,91 @@ SOV_four_year_plan_category = {
 			industrial_capacity_factory = -0.15
 		}
 	}
+
+	SOV_4YP_2 = {
+		priority = 10
+		fire_only_once = yes
+		activation = {
+			always = no
+		}
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}	
+			custom_trigger_tooltip = {
+				tooltip = "The Soviet Union Must Have More Than 50 Trains and Built The Proposed Railways By The End Of The Year"
+				SOV = {
+					has_equipment = {
+						train_equipment_1 > 50	
+					}
+				}
+			}	
+		}
+		visible = {
+			original_tag = SOV
+			has_completed_focus = SOV_four_year_plan
+		}	
+		cancel_trigger = {
+			hidden_trigger = {
+				has_war = yes
+				has_civil_war = yes
+				NOT = {
+					has_government = communism
+				}
+			}	
+		}
+		icon = GFX_decision_generic_industry
+		is_good = no
+		days_mission_timeout = 10
+		selectable_mission = no
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = soviet_4YP_succeeds.2 }
+			}	
+		}
+		cancel_effect = {
+			hidden_effect = {
+				country_event = { id = soviet_4YP_fails.2 }
+			}	
+		}	
+		timeout_effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_equipment = {
+							train_equipment > 50
+						}
+						has_railway_level = {
+							state = 219
+							level = 3
+						}
+						has_railway_level = {
+							state = 195
+							level = 3
+						}
+						has_railway_level = {
+							state = 217
+							level = 3
+						}
+					}
+				}
+				hidden_effect = {
+					country_event = { id = soviet_4YP_succeeds.1 }
+				}	
+			}
+			else = {
+				hidden_effect = {
+					country_event = { id = soviet_4YP_fails.1 }
+				}	
+			}	
+		}
+	}
 }	
-	
+
+
 SOV_purge_party_yez = {
 
 	SOV_party_strenght_bad = {

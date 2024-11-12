@@ -34,14 +34,19 @@ country_event = {
 		
 		hidden_effect = {
 			set_country_flag = SOV_succeeded_4YP_1
+			add_to_variable = {
+				var = SOV_4YP_completed_phases
+				value = 1
+			}
+			activate_mission = SOV_4YP_2
 		}	
 	}
 }
 
 country_event = {
 	id = soviet_4YP_fails.1
-	title = soviet_4YP_succeeds.1.t
-	desc = soviet_4YP_succeeds.1.desc
+	title = soviet_4YP_fails.1.t
+	desc = soviet_4YP_fails.1.desc
 	picture = GFX_report_event_SOV_coup
 	
 	is_triggered_only = yes
@@ -49,10 +54,15 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = soviet_4YP_succeeds.1.a
+		name = soviet_4YP_fails.1.a
 		
 		hidden_effect = {
 			set_country_flag = SOV_failed_4YP_1
+			add_to_variable = {
+				var = SOV_4YP_failed_phases
+				value = 1
+			}
+			activate_mission = SOV_4YP_2
 		}	
 	}
 }
