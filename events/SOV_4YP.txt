@@ -1,5 +1,6 @@
 add_namespace = soviet_4YP_starts
 add_namespace = soviet_4YP_succeeds
+add_namespace = soviet_4YP_fails
 
 country_event = {
 	id = soviet_4YP_starts.1
@@ -32,7 +33,26 @@ country_event = {
 		name = soviet_4YP_succeeds.1.a
 		
 		hidden_effect = {
-			set_country_flag = SOV_succeed_4YP_1
+			set_country_flag = SOV_succeeded_4YP_1
+		}	
+	}
+}
+
+country_event = {
+	id = soviet_4YP_fails.1
+	title = soviet_4YP_succeeds.1.t
+	desc = soviet_4YP_succeeds.1.desc
+	picture = GFX_report_event_SOV_coup
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = soviet_4YP_succeeds.1.a
+		
+		hidden_effect = {
+			set_country_flag = SOV_failed_4YP_1
 		}	
 	}
 }

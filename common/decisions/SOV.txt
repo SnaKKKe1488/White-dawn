@@ -35,15 +35,6 @@ SOV_four_year_plan_category = {
 		allowed = {
 			original_tag = SOV
 		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 219
-				state = 217
-				state = 195
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 		available = {
 			hidden_trigger = {
 				always = NO
@@ -63,32 +54,23 @@ SOV_four_year_plan_category = {
 			hidden_trigger = {
 				has_war = yes
 				has_civil_war = yes
+				NOT = {
+					has_government = communism
+				}
 			}	
 		}
 		icon = GFX_decision_generic_industry
 		is_good = no
-		days_mission_timeout = 365
+		days_mission_timeout = 10
 		selectable_mission = no
 		complete_effect = {
 			hidden_effect = {
-				country_event = { id = SOV_4YP_succeeds.1 hours = 1 }
+				country_event = { id = soviet_4YP_succeeds.1 hours = 1 }
 			}	
 		}
 		cancel_effect = {
-			if = {
-				limit = {
-					SOV = {
-						num_of_factories > 100
-					}
-				}
-				hidden_effect = {
-					country_event = { id =  }
-				}	
-			}
-			else = {
-				hidden_effect = {
-					country_event = { id = SOV_4YP_fails.1 hours =1 }
-				}	
+			hidden_effect = {
+				country_event = { id = soviet_4YP_fails.1 }
 			}	
 		}	
 		timeout_effect = {
@@ -97,12 +79,14 @@ SOV_four_year_plan_category = {
 					SOV = {
 						num_of_factories > 100
 					}
+				}
+				hidden_effect = {
+					country_event = { id = soviet_4YP_succeeds.1 }
 				}	
-				country_event = { id =  }
 			}
 			else = {
 				hidden_effect = {
-					country_event = { id = SOV_4YP_fails.1 hours =1 }
+					country_event = { id = soviet_4YP_fails.1 }
 				}	
 			}	
 		}
