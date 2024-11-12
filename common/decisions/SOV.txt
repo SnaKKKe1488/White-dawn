@@ -30,12 +30,10 @@ SOV_four_year_plan_category = {
 		priority = 10
 		fire_only_once = yes
 		activation = {
+			always = no
 		}
 		allowed = {
 			original_tag = SOV
-			NOT = {
-				has_active_mission = SOV_4YP_2
-			}	
 		}
 		available = {
 			hidden_trigger = {
@@ -365,17 +363,14 @@ SOV_purge_party_yez = {
 		}
 		available = {
 			hidden_trigger = {
-				always = NO
+				always = no
 			}		
 		}
 		visible = {
 			original_tag = SOV
 			has_completed_focus = SOV_hammer_and_sickle
 		}	
-		cancel_trigger = {
-			hidden_trigger = {
-				has_completed_focus = SOV_one_party
-			}	
+		cancel_trigger = {	
 		}
 		icon = GFX_decision_generic_industry
 		is_good = no
