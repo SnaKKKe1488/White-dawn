@@ -70,9 +70,64 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_SOV_dissolve_duma.png"			
 	}
 	
-	SpriteType = { #TODOTODOTODOTODO
+	SpriteType = {
 		name = "GFX_SOV_soviet_constitution"
-		#texturefile = "gfx/interface/goals/GFX_SOV_"			
+		texturefile = "gfx/interface/goals/GFX_SOV_soviet_constitution.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_centralized_economy"
+		texturefile = "gfx/interface/goals/GFX_SOV_centralized_economy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_state_economy"
+		texturefile = "gfx/interface/goals/GFX_SOV_state_economy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_workforce_mobilization"
+		texturefile = "gfx/interface/goals/GFX_SOV_workforce_mobilization.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_nationalization_efforts"
+		texturefile = "gfx/interface/goals/GFX_SOV_nationalization_efforts.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_industry"
+		texturefile = "gfx/interface/goals/goal_generic_construct_mil_factory.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_collectivization_efforts"
+		texturefile = "gfx/interface/goals/GFX_SOV_collectivization_efforts.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_rural_development"
+		texturefile = "gfx/interface/goals/GFX_SOV_rural_development.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_rural_mechanization"
+		texturefile = "gfx/interface/goals/GFX_SOV_rural_mechanization.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_war_ready_economy"
+		texturefile = "gfx/interface/goals/GFX_SOV_war_ready_economy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_war_economy"
+		texturefile = "gfx/interface/goals/GFX_SOV_war_economy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_four_year_plan"
+		texturefile = "gfx/interface/goals/GFX_SOV_four_year_plan.dds"			
 	}
 	
 	SpriteType = {
