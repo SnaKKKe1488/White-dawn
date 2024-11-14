@@ -184,7 +184,7 @@ ideas = {
 			}
 		}
 		
-		SOV_commissariat_idea_2 = {
+		SOV_commissariat_idea2 = {
 			picture = SOV_commissariat_idea
 			
 			modifier = {

@@ -799,11 +799,13 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_workforce_mobilization }
         completion_reward = {
-		    add_timed_idea = { idea = SOV_four_year_plan_idea days = 730 }
 			set_variable = { SOV_4YP_completed_phases = 0 }
 			set_variable = { SOV_4YP_failed_phases = 0 }
-			country_event = { id = soviet_4YP_starts.1 }
-			activate_mission = SOV_4YP_1
+			unlock_decision_category_tooltip = SOV_four_year_plan_category
+			hidden_effect = {
+				activate_mission = SOV_4YP_1
+				country_event = { id = soviet_4YP_starts.1 }
+			}	
 		}
 	}
 	
@@ -1152,7 +1154,7 @@ focus_tree = {
         completion_reward = {
 		    swap_ideas = {
 				remove_idea = SOV_commissariat_idea
-				add_idea = SOV_commissariat_idea_2
+				add_idea = SOV_commissariat_idea2
 			}	
 		}
 	}
