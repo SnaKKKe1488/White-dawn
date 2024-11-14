@@ -41,6 +41,16 @@
  SOV_four_year_plan:0 "The Four Year Plan"
  SOV_four_year_plan_desc:0 ""
  
+ SOV_red_guard:0 "The Red Guard"
+ SOV_red_guard_desc:0 ""
+ SOV_workers_militia:0 "Workers Militia"
+ SOV_workers_militia_desc:0 ""
+ 
+ SOV_dissolve_duma:0 "Dissolve The Duma"
+ SOV_dissolve_duma_desc:0 ""
+ SOV_soviet_constitution:0 "Yezhov’s Constitution"
+ SOV_soviet_constitution_desc:0 ""
+ 
  SOV_trotsky:0 "The Revolutionary Vanguard"
  SOV_trotsky_desc:0 "Lev Kamenev stands for a return to the democratic ideals of early Bolshevism and the continued internationalist mission of the revolution. Kamenev’s leadership offers a vision of socialism based on internal party democracy and global worker solidarity, rejecting authoritarianism in favor of a more participatory system. His path seeks to empower worker councils (soviets), encourage open debate within the party, and focus on spreading the revolution abroad. Though idealistic, Kamenev’s commitment to gradual reform and worker-driven governance could be vulnerable to opposition from hardliners eager for more decisive leadership."
  
