@@ -275,7 +275,7 @@ SOV_four_year_plan_category = {
 				tooltip = "The Soviet Union Must Have More Than 50 Trains and Built The Proposed Railways By The End Of The Year"
 				SOV = {
 					has_equipment = {
-						train_equipment_1 > 50	
+						train_equipment > 50	
 					}
 				}
 			}	
