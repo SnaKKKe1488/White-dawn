@@ -17,6 +17,7 @@ SOV_four_year_plan_category = {
 
 	visible = {
 		original_tag = SOV
+		has_completed_focus = SOV_four_year_plan
 	}
 }
 

@@ -30,8 +30,10 @@ SOV_four_year_plan_category = {
 	
 		priority = 10
 		fire_only_once = yes
+		
 		allowed = {
 			original_tag = SOV
+			always = no
 		}
 		
 		available = {
