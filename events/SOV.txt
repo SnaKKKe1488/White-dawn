@@ -121,9 +121,7 @@ country_event = {
 	option = {
 		name = soviet_election.4.b
 		
-		hidden_effect = {
-			complete_national_focus = SOV_bukharins_legacy
-		}	
+		complete_national_focus = SOV_bukharins_legacy	
 	}
 	
 	option = {

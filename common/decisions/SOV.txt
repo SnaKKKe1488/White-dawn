@@ -29,9 +29,6 @@ SOV_four_year_plan_category = {
 	SOV_4YP_1 = {
 		priority = 10
 		fire_only_once = yes
-		activation = {
-			always = no
-		}
 		allowed = {
 			original_tag = SOV
 		}
@@ -102,7 +99,6 @@ SOV_four_year_plan_category = {
 		priority = 9
 	
 		available = {
-			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -129,7 +125,6 @@ SOV_four_year_plan_category = {
 		priority = 8
 	
 		available = {
-			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -186,7 +181,6 @@ SOV_four_year_plan_category = {
 		priority = 7
 	
 		available = {
-			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -216,7 +210,6 @@ SOV_four_year_plan_category = {
 		priority = 6
 	
 		available = {
-			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
@@ -244,7 +237,6 @@ SOV_four_year_plan_category = {
 		priority = 5
 	
 		available = {
-			has_idea = SOV_four_year_plan_idea
 		} 
 		
 		visible = {
