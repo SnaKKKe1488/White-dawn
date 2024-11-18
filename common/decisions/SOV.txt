@@ -27,11 +27,13 @@ political_actions = {
 SOV_four_year_plan_category = {
 	
 	SOV_4YP_1 = {
+	
 		priority = 10
 		fire_only_once = yes
 		allowed = {
 			original_tag = SOV
 		}
+		
 		available = {
 			hidden_trigger = {
 				always = no
@@ -43,10 +45,12 @@ SOV_four_year_plan_category = {
 				}
 			}	
 		}
+		
 		visible = {
 			original_tag = SOV
 			has_completed_focus = SOV_four_year_plan
-		}	
+		}
+		
 		cancel_trigger = {
 			hidden_trigger = {
 				has_war = yes
@@ -56,20 +60,24 @@ SOV_four_year_plan_category = {
 				}
 			}	
 		}
+		
 		icon = GFX_decision_generic_industry
 		is_good = no
-		days_mission_timeout = 5
+		days_mission_timeout = 365
 		selectable_mission = no
+		
 		complete_effect = {
 			hidden_effect = {
 				country_event = { id = soviet_4YP_succeeds.1 }
 			}	
 		}
+		
 		cancel_effect = {
 			hidden_effect = {
 				country_event = { id = soviet_4YP_fails.1 }
 			}	
-		}	
+		}
+		
 		timeout_effect = {
 			if = {
 				limit = {
@@ -199,6 +207,8 @@ SOV_four_year_plan_category = {
 			production_speed_buildings_factor = 0.15
 		}
 	}
+	
+
 	
 	SOV_4YP_raise_salaries = {
 		icon = GFX_decision_hol_attract_foreign_investors
