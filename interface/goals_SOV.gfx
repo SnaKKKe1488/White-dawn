@@ -76,6 +76,21 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_SOV_hammer_and_sickle"
+		texturefile = "gfx/interface/goals/GFX_SOV_hammer_and_sickle.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_revolutionary_discipline"
+		texturefile = "gfx/interface/goals/GFX_SOV_revolutionary_discipline.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_purge_dissidents"
+		texturefile = "gfx/interface/goals/GFX_SOV_purge_dissidents.dds"			
+	}
+	
+	SpriteType = {
 		name = "GFX_SOV_centralized_economy"
 		texturefile = "gfx/interface/goals/GFX_SOV_centralized_economy.dds"			
 	}
