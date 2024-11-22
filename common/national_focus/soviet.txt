@@ -59,6 +59,11 @@ focus_tree = {
         available_if_capitulated = no
 		prerequisite = { focus = SOV_february_values }
 		mutually_exclusive = { focus = SOV_hold_elections }
+		bypass = {
+			ROOT = {
+			    has_government = communism
+			}	
+		}
         completion_reward = {
 			add_stability = -0.15
 			set_country_flag = SOV_coup_instated
@@ -72,10 +77,10 @@ focus_tree = {
 		relative_position_id = SOV_february_values
 		x = -2
         y = 1
-        cost = 15
+        cost = 10
         available_if_capitulated = no
 		available = {
-			communism > 0.3
+			communism > 0.15
 		}
 		bypass = {
 			ROOT = {
@@ -86,7 +91,6 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_coup_kolchak }
         completion_reward = {
 			country_event = { id = soviet_election.1 hours = 72 }	
-			custom_effect_tooltip = SOV_hold_elections
 		}
 	}
 	
