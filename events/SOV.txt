@@ -113,19 +113,19 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = soviet_election.4.a
+		name = soviet_election.5.a
 		
 		complete_national_focus = SOV_trotsky
 	}
 	
 	option = {
-		name = soviet_election.4.b
+		name = soviet_election.5.b
 		
 		complete_national_focus = SOV_bukharins_legacy	
 	}
 	
 	option = {
-		name = soviet_election.4.c
+		name = soviet_election.5.c
 		
 		complete_national_focus = SOV_end_of_compromise
 	}

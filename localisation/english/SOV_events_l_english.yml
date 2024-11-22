@@ -8,4 +8,12 @@
  soviet_election.3.t:0 "Defeat in the Elections"
  soviet_election.3.desc:0 "Even though we were confident the people of Russia would choose socialism once again, the White coalition came out victorious, we cannot let this happen, we must proclaim a revolution by any means."
  soviet_election.3.a:0 "A coup against Kolchak's brutal regime is necessary."
+ soviet_election.4.t:0 "Coup Against Kolchak Turns Successful!"
+ soviet_election.4.desc:0 "Kolchak's Regime is Finally Over, it Was a Necessary Measure Despite the Possible Consequences to Our Country And Our People, We Need to Earn the People's Trust and Stablish The Socialist Republic"
+ soviet_election.4.a:0 "The Social Revolutionaries Are Back Again"
+ soviet_election.5.t:0 "The Supreme Soviet Election"
+ soviet_election.5.desc:0 "After a Long Discussion The Few Members Of the Soviet Of Russia Finally Elected a Leader To Lead Our Country In a True Revolutionary Way, Making Sure to Elect Someone Who Won't Commit The Same Errors That Leaded To Our Fall in 1925. \n The Soviet Had 3 Options, Each Very Different From One Another but With The Same Goal in Common, A Revolutionary and Anti-Monarchist Government; \n The Trotskyist, Lev Kamenev, Former Leader Of the Soviet Of Moscow And Of the Council of Labour And Defense, Seeking a Middle Ground Between Yezhov's Collectivist Policies And Bukharin's NEP (New Economic Policy) And an Increase In the Democracy Within the Party \n The Other Option is The Current Leader of The RSFSR, Nikolay Bukharin, Who Aims To Continue The PArtially Succesful NEP And a Gradual Industrialization, However, The Soviet Believes That Even Though He is Very Popular Within The Party And The People, He is a Weak Leader That Would Only Focus in Socialism in Russia Only \n And the Final - And Least Popular Candidate - Nikolay Yezhov, Former Leader of The Feared "Cheka", Yezhov Aims for an Orthodox Marxist Policy With a Strong State And Party that, if succesful, Can Make Russia Achieve Its Former Greatness \n Following The Deliberation The Soviet Finally Elected..."
+ soviet_election.5.a:0 "Lev Kamenev"
+ soviet_election.5.b:0 "Nikolay Bukharin"
+ soviet_election.5.c:0 "Nikolay Yezhov"
  
