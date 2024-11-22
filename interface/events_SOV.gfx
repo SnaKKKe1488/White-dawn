@@ -1,0 +1,7 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_report_event_SOV_convene_soviet"
+		texturefile = "gfx/interface/event_pictures/GFX_report_event_SOV_convene_soviet.png"
+	}	
+}

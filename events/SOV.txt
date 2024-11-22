@@ -106,7 +106,7 @@ country_event = {
 	id = soviet_election.5
 	title = soviet_election.5.t
 	desc = soviet_election.5.desc
-	picture = GFX_report_event_SOV_coup
+	picture = GFX_report_event_SOV_convene_soviet
 	
 	is_triggered_only = yes
 
