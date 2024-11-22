@@ -930,20 +930,6 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = SOV_revolutionary_discipline
-		icon = GFX_SOV_revolutionary_discipline
-		relative_position_id = SOV_hammer_and_sickle
-		x = 1
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-		prerequisite = { focus = SOV_hammer_and_sickle }
-        completion_reward = {
-		    add_political_power = 100
-		}
-	}
-	
-	focus = {
 	    id = SOV_purge_dissidents
 		icon = GFX_SOV_purge_dissidents
 		relative_position_id = SOV_revolutionary_discipline
@@ -956,27 +942,13 @@ focus_tree = {
 		    add_political_power = 100
 		}
 	}
-
-	focus = {
-	    id = SOV_prevent_counter_revolution
-		icon = GFX_SOV_prevent_counter_revolution
-		relative_position_id = SOV_party_discipline
-		x = 0
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-		prerequisite = { focus = SOV_party_discipline }
-        completion_reward = {
-		    add_political_power = 100
-		}
-	}
 	
 	focus = {
 	    id = SOV_red_purge
 		icon = GFX_SOV_red_purge
-		relative_position_id = SOV_prevent_counter_revolution
-		x = 1
-        y = 1
+		relative_position_id = SOV_hammer_and_sickle
+		x = 0
+        y = 3
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_prevent_counter_revolution }
@@ -1053,6 +1025,20 @@ focus_tree = {
 	}
 	
 	focus = {
+	    id = SOV_revolutionary_discipline
+		icon = GFX_SOV_revolutionary_discipline
+		relative_position_id = SOV_hammer_and_sickle
+		x = 1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_hammer_and_sickle }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
 	    id = SOV_party_discipline
 		icon = GFX_SOV_party_discipline
 		relative_position_id = SOV_hammer_and_sickle
@@ -1061,6 +1047,20 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_hammer_and_sickle }
+        completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = SOV_prevent_counter_revolution
+		icon = GFX_SOV_prevent_counter_revolution
+		relative_position_id = SOV_party_discipline
+		x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		prerequisite = { focus = SOV_party_discipline }
         completion_reward = {
 		    add_political_power = 100
 		}
