@@ -1196,11 +1196,12 @@ focus_tree = {
 	    id = SOV_red_terror
 		icon = GFX_SOV_red_terror
 		relative_position_id = SOV_revive_cheka
-		x = 0
+		x = 3
         y = 1
         cost = 10
         available_if_capitulated = no
 		prerequisite = { focus = SOV_revive_cheka }
+		prerequisite = { focus = SOV_red_purge }
         completion_reward = {
 		    add_political_power = 100
 		}

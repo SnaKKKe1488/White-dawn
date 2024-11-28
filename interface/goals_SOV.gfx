@@ -89,6 +89,21 @@ spriteTypes = {
 		name = "GFX_SOV_purge_dissidents"
 		texturefile = "gfx/interface/goals/GFX_SOV_purge_dissidents.dds"			
 	}
+
+	SpriteType = {
+		name = "GFX_SOV_party_discipline"
+		texturefile = "gfx/interface/goals/GFX_SOV_party_discipline.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_prevent_counter_revolution"
+		texturefile = "gfx/interface/goals/GFX_SOV_prevent_counter_revolution.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_red_purge"
+		texturefile = "gfx/interface/goals/GFX_SOV_red_purge.dds"			
+	}
 	
 	SpriteType = {
 		name = "GFX_SOV_centralized_economy"
