@@ -50,6 +50,16 @@
  SOV_dissolve_duma_desc:0 "Yezhov moves to dissolve the Duma, eliminating any remaining vestiges of representative politics. This action concentrates power solely within the Communist Party, ensuring that no opposition can challenge his vision for the Soviet state."
  SOV_soviet_constitution:0 "Yezhov’s Constitution"
  SOV_soviet_constitution_desc:0 "Yezhov introduces a new constitution that formalizes his centralization of power, cementing his authority within the Soviet state. This document enshrines a vision of an uncompromising, ideologically pure Soviet Union, led by the Party without room for dissent."
+ SOV_hammer_and_sickle:0 "By The Hammer And The Sickle"
+ SOV_hammer_and_sickle_desc:0 "WIP"
+ SOV_party_discipline:0 "Discipline In The Party"
+ SOV_party_discipline_desc:0 "WIP"
+ SOV_prevent_counter_revolution:0 "Prevent A Counter Revolution"
+ SOV_prevent_counter_revolution_desc:0 "WIP"
+ SOV_revolutionary_discipline:0 "Revolutionary Discipline"
+ SOV_revolutionary_discipline_desc:0 "WIP"
+ SOV_red_purge:0 "The Red Purge"
+ SOV_red_purge_desc:0 "WIP" 
 
  
  SOV_trotsky:0 "The Revolutionary Vanguard"
