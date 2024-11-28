@@ -58,6 +58,8 @@
  SOV_prevent_counter_revolution_desc:0 "WIP"
  SOV_revolutionary_discipline:0 "Revolutionary Discipline"
  SOV_revolutionary_discipline_desc:0 "WIP"
+ SOV_purge_dissidents:0 "Purge Dissidents"
+ SOV_purge_dissidents_desc:0 "WIP"
  SOV_red_purge:0 "The Red Purge"
  SOV_red_purge_desc:0 "WIP" 
 
