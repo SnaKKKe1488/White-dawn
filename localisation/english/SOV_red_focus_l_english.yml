@@ -30,6 +30,7 @@
  SOV_nationalization_efforts_desc:0 "To further solidify state power, Yezhov orders the nationalization of all remaining private enterprises, bringing every sector under state control. By eliminating private ownership, he seeks to ensure total alignment with Soviet economic and ideological objectives."
  SOV_war_ready_economy:0 "If War Comes Tomorrow"
  SOV_war_ready_economy_desc:0 "Anticipating external threats, Yezhov begins to prepare the Soviet economy for wartime production. This focus prioritizes industries essential to defense and war, ensuring that, if conflict arises, the Soviet Union will be ready to mobilize rapidly."
+ SOV_war_economy_tooltip:0 "\n If The [Root.GetName] Is Not At §RWar§!, It'll Receive A Stability Penalty."
  SOV_workforce_mobilization:0 "Mobilize The Workers"
  SOV_workforce_mobilization_desc:0 "Yezhov mobilizes the Soviet workforce, demanding higher productivity and commitment to the state. Through incentives and quotas, this policy aims to extract maximum labor output, aligning the working class with the state's ambitious production goals."
  SOV_collectivization_efforts:0 "Collectivization Efforts"

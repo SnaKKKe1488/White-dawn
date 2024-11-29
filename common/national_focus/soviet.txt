@@ -754,7 +754,8 @@ focus_tree = {
 					}
 				}
 				add_stability = -0.20
-			}	
+			}
+			custom_effect_tooltip = SOV_war_economy_tooltip
 		}
 	}
 	
