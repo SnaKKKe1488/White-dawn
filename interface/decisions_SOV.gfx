@@ -4,6 +4,11 @@ spriteTypes = {
 		name = "GFX_SOV_four_year_plan_category"
 		texturefile = "gfx/interface/decisions/SOV_four_year_plan_category.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_SOV_purge_decision"
+		texturefile = "gfx/interface/decisions/SOV_purge_decision.png"
+	}
 
 	SpriteType = { 
 		name = "GFX_SOV_yez_party"

@@ -377,7 +377,7 @@ SOV_purge_party_yez = {
 		}
 		icon = GFX_decision_generic_industry
 		is_good = no
-		days_mission_timeout = 1
+		days_mission_timeout = 14
 		selectable_mission = no
 		complete_effect = {
 		}
@@ -392,6 +392,24 @@ SOV_purge_party_yez = {
 				var = SOV_yez_party_strenght
 				value = 25
 			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_party_discipline
+				}
+				subtract_from_variable = {
+					var = SOV_yez_party_loyalty
+					value = 5
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_revolutionary_discipline
+				}
+				subtract_from_variable = {
+					var = SOV_yez_party_strenght
+					value = 5
+				}
+			}	
 			if = {
 				limit = {
 					check_variable = { SOV_yez_party_strenght > 100 }
