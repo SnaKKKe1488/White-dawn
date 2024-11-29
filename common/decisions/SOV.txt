@@ -356,7 +356,7 @@ SOV_four_year_plan_category = {
 SOV_purge_party_yez = {
 
 	SOV_party_strenght_bad = {
-		priority = 10
+		priority = 50
 		fire_only_once = no
 		activation = {
 			has_completed_focus = SOV_hammer_and_sickle
@@ -427,6 +427,23 @@ SOV_purge_party_yez = {
 			}
 		}
 	}
+	
+	SOV_purge_dissidents = {
+	
+		icon = 
+		
+		allowed = {
+			original_tag = SOV
+		}
+		
+		priority = 25
+		
+		available = {
+			NOT = {
+				has_country_flag = SOV_purging_yez
+			}
+		}
+	}	
 	
 	SOV_test_minus_str = {
 		icon = GFX_decision_SOV_bills
